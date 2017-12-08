@@ -1,0 +1,20 @@
+.nav__list
+    display: flex;
+
+.nav__link
+    margin: 0 16px;
+    font: 13px / 30px ubuntumedium, sans-serif;
+    text-transform: uppercase;
+    color: primaryWhite;    
+
+.nav__link__effect_hover:hover
+    text-decoration: underline;
+
+.nav__item_after_spot::after
+    content: '';
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    background-color: primaryWhite;
+    border-radius: 50%;
+    vertical-align: middle;

@@ -50,19 +50,26 @@ gulp.task( 'fonts', function() {
 
 gulp.task( 'image', function () {
 
-    return gulp.src( 'src/static/image/**/*' )
+    return gulp.src( 'src/static/image/**/**/*' )
                .pipe( gulp.dest( 'build/image/' ) );
+
+});
+
+gulp.task( 'svg', function () {
+
+    return gulp.src( 'src/static/svg/*' )
+               .pipe( gulp.dest( 'build/svg/' ) );
 
 });
 
 gulp.task( 'watch', function () {
 
-    gulp.watch( 'src/pug/**/*.pug', gulp.series( 'pug' ) );
+    gulp.watch( 'src/pug/**/**/*.pug', gulp.series( 'pug' ) );
     gulp.watch( 'src/static/fonts/**/*', gulp.series( 'fonts' ) );
     gulp.watch( 'src/static/stylus/**/*.styl', gulp.series( 'stylus' ) );
     gulp.watch( 'src/static/scripts/**/*.js', gulp.series( 'scripts' ) );
 
 });
 
-gulp.task( 'default', gulp.series( gulp.parallel( 'pug', 'fonts', 'image', 'stylus', 'scripts' ),
+gulp.task( 'default', gulp.series( gulp.parallel( 'pug', 'fonts', 'image', 'svg', 'stylus', 'scripts' ),
                                    gulp.parallel( 'watch' ) ));
