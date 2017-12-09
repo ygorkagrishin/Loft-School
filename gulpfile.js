@@ -50,7 +50,7 @@ gulp.task( 'fonts', function() {
 
 gulp.task( 'image', function () {
 
-    return gulp.src( 'src/static/image/**/**/*' )
+    return gulp.src( 'src/static/image/**/*' )
                .pipe( gulp.dest( 'build/image/' ) );
 
 });
