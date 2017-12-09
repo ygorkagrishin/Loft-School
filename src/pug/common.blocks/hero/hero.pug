@@ -2,10 +2,9 @@ section.hero.section
     .hero__bg
         .container
             .hero__rows
-                .hero__row
 
-                    // header
-                
+                // header > nav
+                .hero__row
                     header.header
                         .header__inner
                             .header__elem.header__elem_grow_2
@@ -28,15 +27,18 @@ section.hero.section
                                             a.nav__link(href="#").nav__link__effect_hover Контакты
                             .header__elem
                                 .btn
-                                    a.btn__order(href="#")
+                                    a.btn__order(href="#").btn__order_effect_hover Заказать
                             .header__elem
                                 .i-menu
                                     span.i-menu__comp
                                     span.i-menu__comp
-                                    span.i-menu__comp
-                
-                    // header-end
+                                    span.i-menu__comp              
+                // header-end               
 
                 .hero__row
 
+                // hero-arrrow-scroll
                 .hero__row
+                    .hero__arrow-scroll
+                        object(data="svg/arrow-scroll.svg", type="image/svg+xml").hero__arrow
+                // hero-arrow-scroll-end
