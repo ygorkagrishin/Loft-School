@@ -66,7 +66,7 @@ gulp.task( 'watch', function () {
 
     gulp.watch( 'src/pug/**/**/*.pug', gulp.series( 'pug' ) );
     gulp.watch( 'src/static/fonts/**/*', gulp.series( 'fonts' ) );
-    gulp.watch( 'src/static/stylus/**/**/*.styl', gulp.series( 'stylus' ) );
+    gulp.watch( 'src/static/stylus/**/**/**/*.styl', gulp.series( 'stylus' ) );
     gulp.watch( 'src/static/scripts/**/*.js', gulp.series( 'scripts' ) );
 
 });
