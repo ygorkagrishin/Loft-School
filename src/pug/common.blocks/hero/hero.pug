@@ -7,9 +7,13 @@ section.hero.section
                 .hero__row
                     header.header
                         .header__inner
+                            // logo
                             .header__elem.header__elem_grow_2
                                 .logo
                                     object(data="svg/logo.svg", type="image/svg+xml").logo__logo
+                            // logo-end
+                            
+                            // nav
                             .header__elem
                                 nav.nav
                                     ul.nav__list
@@ -25,14 +29,23 @@ section.hero.section
                                             a.nav__link(href="#").nav__link__effect_hover Отзывы
                                         li.nav__item
                                             a.nav__link(href="#").nav__link__effect_hover Контакты
+                            // nav end
+
+                            // btn order
                             .header__elem
                                 .btn
-                                    a.btn__order(href="#").btn__order_effect_hover Заказать
+                                    a.btn__order(href="#").hero__btn.btn__order_effect_hover Заказать
+                            //btn order end
+                            
+                            // icon menu
                             .header__elem
+                                img(src="image/hero/close.png", alt="close").i-close.i-close_visible_false
                                 .i-menu
                                     span.i-menu__comp
                                     span.i-menu__comp
-                                    span.i-menu__comp              
+                                    span.i-menu__comp
+                            // icon menu end
+
                 // header-end               
 
                 // hero main

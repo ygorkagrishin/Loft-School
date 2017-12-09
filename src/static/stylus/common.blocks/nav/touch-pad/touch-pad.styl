@@ -1,0 +1,29 @@
+.nav__list
+    @media screen and ( max-width 768px )
+        position: fixed;
+        display: none;
+        top: 0;
+        left: 0;
+        z-index: 9999;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+        background-color: rgba( primaryBlack,.9 );
+
+.nav__list_visibil_true
+    @media screen and ( max-width 768px )
+        display: flex;   
+
+.nav__list_visibil_false 
+    @media screen and ( max-width 768px )
+        display: none;                
+
+.nav__item_after_spot::after
+    @media screen and ( max-width 768px )
+        display: block;
+        margin: 0 auto;
+
+.nav__link
+    @media screen and ( max-width 768px )
+        margin: 15px 0;          
