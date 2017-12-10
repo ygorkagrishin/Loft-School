@@ -1,5 +1,4 @@
 .review__row
-    position: relative;
     display: flex;
     flex-wrap: wrap;
     height: 100%;
@@ -41,4 +40,49 @@
 
 .review__text
     font: 14px / 24px ubuntulight;
-    color: primaryWhite;   
+    color: primaryWhite; 
+
+.review__btn > .btn__read
+    display: none;
+
+.review__popup
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999999;
+    display: none;
+    background-color: rgba( primaryBlack,.9 );
+
+.review__popup-row
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+
+.review__popup-view
+    position: relative;
+    width: 45%;
+    background-color: primaryWhite; 
+    border-radius: 5px;
+
+.review__popup-inner
+    padding: 24px 21px 48px 21px;
+
+.review__popup-title
+    @extend .review__title;
+    color: primaryBlack;   
+
+.review__popup-text
+    @extend .review__text;
+    color: primaryBlack;       
+
+.review__popup-pic
+    position: absolute;
+    top: 9%;
+    right: 4%;
+
+.review__popup-close
+    cursor: pointer;    
