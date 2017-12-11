@@ -1,7 +1,21 @@
 .hero__bg
+    position: relative;
+    z-index: 1;
     height: 100%;
-    background: url( 'image/hero/texture.png' ) no-repeat center / cover,
-                url( 'image/hero/video-bg.jpg' ) no-repeat right center / cover;
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: cover;
+
+.hero__bg_after_bg:after
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url( 'image/hero/texture.png' ) no-repeat center / cover;   
 
 .hero__rows
     display: flex;

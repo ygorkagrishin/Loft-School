@@ -8,14 +8,12 @@
     <meta name="description" content="loftSchool">
     <link href="../bower_components/normalize-css/normalize.css" rel="stylesheet">
     <link href="main.css" rel="stylesheet">
-    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="../bower_components/jquery-lazy/jquery.lazy.min.js"></script>
   </head>
   <body class="page">
     <!-- full page-->
     <div class="fullPage">
       <section class="hero section">
-        <div class="hero__bg">
+        <div class="hero__bg hero__bg_after_bg lazy" data-src="image/hero/video-bg.jpg">
           <div class="container">
             <div class="hero__rows">
               <!-- header > nav-->
@@ -23,7 +21,7 @@
                 <header class="header">
                   <div class="header__row">
                     <!-- logo-->
-                    <div class="header__elem header__elem_grow_2">
+                    <div class="header__elem header__elem_prop_grow-2">
                       <div class="logo">
                         <object class="logo__logo" data="svg/logo.svg" type="image/svg+xml"></object>
                       </div>
@@ -49,7 +47,7 @@
                     </div>
                     <!--btn order end-->
                     <!-- icon menu-->
-                    <div class="header__elem"><img class="i-close i-close_visible_false" src="image/hero/close.png" alt="close">
+                    <div class="header__elem header__elem_prop_relative"><img class="i-close i-close_visible_false" src="image/hero/close.png" alt="close">
                       <div class="i-menu"><span class="i-menu__comp"></span><span class="i-menu__comp"></span><span class="i-menu__comp"></span></div>
                     </div>
                     <!-- icon menu end-->
@@ -79,7 +77,7 @@
         </div>
       </section>
       <section class="we section">
-        <div class="we__bg">
+        <div class="we__bg lazy" data-src="image/we/bg1.png">
           <div class="container">
             <div class="we__center">
               <div class="wrap-cont">
@@ -143,14 +141,12 @@
                         котлетка такой сочной, а сыр таким расплавленным.
                       </p>
                     </div>
-                    <div class="review__btn"><a class="btn__more btn__more_effect_hover" href="#" data-fancybox data-src="#review-1">Подробнее</a><a class="btn__read btn__read_effect_hover" href="#">Читать отзыв</a></div>
+                    <div class="review__btn"><a class="btn__more btn__more_effect_hover" data-fancybox data-src="#review-1" href="javascript:;">Подробнее</a><a class="btn__read btn__read_effect_hover" data-fancybox data-src="#review-1" href="javascript:;">Читать отзыв</a></div>
                   </div>
                 </div>
               </div>
             </article>
           </div>
-          <!-- Review-popup 1-->
-          <!-- Review-popup 1 end-->
           <div class="review__elem">
             <article class="review__review">
               <div class="review__bg lazy" data-src="image/review/photo-1440606797942-6cc04c045447.png">
@@ -171,8 +167,6 @@
               </div>
             </article>
           </div>
-          <!-- Review-popup 2-->
-          <!-- Review popup 2 end-->
           <div class="review__elem">
             <article class="review__review">
               <div class="review__bg lazy" data-src="image/review/photo-1445404590072-16ef9c18bd83.png">
@@ -193,8 +187,6 @@
               </div>
             </article>
           </div>
-          <!-- Review popup 3-->
-          <!-- Review popup 3 end-->
           <div class="review__elem">
             <article class="review__review">
               <div class="review__bg lazy" data-src="image/review/photo-1468546818829-25bb337b6646.png">
@@ -215,8 +207,6 @@
               </div>
             </article>
           </div>
-          <!-- Review popup 4-->
-          <!-- Review popup 4 end-->
           <div class="review__elem">
             <article class="review__review">
               <div class="review__bg lazy" data-src="image/review/photo-1438763298591-75a0d42b7265.png">
@@ -237,8 +227,6 @@
               </div>
             </article>
           </div>
-          <!-- Review popup 5-->
-          <!-- Review popup 5 end-->
           <div class="review__elem">
             <article class="review__review">
               <div class="review__bg lazy" data-src="image/review/photo-1461332682233-b818af4c3a6e.png">
@@ -259,8 +247,6 @@
               </div>
             </article>
           </div>
-          <!-- Review popup 6-->
-          <!-- Review popup 6 end-->
           <div class="review__elem">
             <article class="review__review">
               <div class="review__bg lazy" data-src="image/review/photo-1457706924510-773f3c796de3.png">
@@ -281,8 +267,6 @@
               </div>
             </article>
           </div>
-          <!-- Review popup 7-->
-          <!-- Review popup 7 end-->
           <div class="review__elem">
             <article class="review__review">
               <div class="review__bg lazy" data-src="image/review/photo-1458696765561-12142eaead131.png">
@@ -303,8 +287,6 @@
               </div>
             </article>
           </div>
-          <!-- Review popup 8-->
-          <!-- Review popup 8 end-->
         </div>
       </section>
       <section class="contact section">
@@ -312,7 +294,7 @@
           <div class="contact__map" id="map"></div>
           <div class="contact__row_pos_bottom">
             <footer class="footer">
-              <div class="footer__bg">
+              <div class="footer__bg footer__bg_after_bg lazy" data-src="image/contact/chalkboard_texture_mc2015_by_mattiamc-d8dbnac.png">
                 <div class="container">
                   <div class="footer__row">
                     <div class="footer__elem footer__contact">
@@ -344,6 +326,8 @@
       </section>
     </div>
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="../bower_components/jquery-lazy/jquery.lazy.min.js"></script>
     <script src="main.min.js"></script>
   </body>
 </html>

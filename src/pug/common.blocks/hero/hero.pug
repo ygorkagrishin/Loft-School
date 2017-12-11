@@ -1,5 +1,5 @@
 section.hero.section
-    .hero__bg
+    .hero__bg.hero__bg_after_bg.lazy( data-src="image/hero/video-bg.jpg" )
         .container
             .hero__rows
 
@@ -8,7 +8,7 @@ section.hero.section
                     header.header
                         .header__row
                             // logo
-                            .header__elem.header__elem_grow_2
+                            .header__elem.header__elem_prop_grow-2
                                 .logo
                                     object(data="svg/logo.svg", type="image/svg+xml").logo__logo
                             // logo-end
@@ -38,7 +38,7 @@ section.hero.section
                             //btn order end
                             
                             // icon menu
-                            .header__elem
+                            .header__elem.header__elem_prop_relative
                                 img(src="image/hero/close.png", alt="close").i-close.i-close_visible_false
                                 .i-menu
                                     span.i-menu__comp
