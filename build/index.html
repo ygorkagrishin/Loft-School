@@ -7,8 +7,9 @@
     <title>LoftSchool</title>
     <meta name="description" content="loftSchool">
     <link href="../bower_components/normalize-css/normalize.css" rel="stylesheet">
-    <link href="lib/fancybox/jquery.fancybox.min.css">
     <link href="main.css" rel="stylesheet">
+    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="../bower_components/jquery-lazy/jquery.lazy.min.js"></script>
   </head>
   <body class="page">
     <!-- full page-->
@@ -130,7 +131,7 @@
         <div class="review__row">
           <div class="review__elem">
             <article class="review__review">
-              <div class="review__bg" style="background: url( 'image/review/photo-1458890715264-db84f7c6ef13.png' ) no-repeat top / cover;">
+              <div class="review__bg lazy" data-src="image/review/photo-1458890715264-db84f7c6ef13.png">
                 <div class="review__trigger">
                   <div class="review__hover">
                     <h4 class="review__title">Константин Спилберг</h4>
@@ -152,7 +153,7 @@
           <!-- Review-popup 1 end-->
           <div class="review__elem">
             <article class="review__review">
-              <div class="review__bg" style="background: url( 'image/review/photo-1440606797942-6cc04c045447.png' ) no-repeat left center / cover;">
+              <div class="review__bg lazy" data-src="image/review/photo-1440606797942-6cc04c045447.png">
                 <div class="review__trigger">
                   <div class="review__hover">
                     <h4 class="review__title">Константин Спилберг</h4>
@@ -174,7 +175,7 @@
           <!-- Review popup 2 end-->
           <div class="review__elem">
             <article class="review__review">
-              <div class="review__bg" style="background: url( 'image/review/photo-1445404590072-16ef9c18bd83.png' ) no-repeat top / cover;">
+              <div class="review__bg lazy" data-src="image/review/photo-1445404590072-16ef9c18bd83.png">
                 <div class="review__trigger">
                   <div class="review__hover">
                     <h4 class="review__title">Константин Спилберг</h4>
@@ -196,7 +197,7 @@
           <!-- Review popup 3 end-->
           <div class="review__elem">
             <article class="review__review">
-              <div class="review__bg" style="background: url( 'image/review/photo-1468546818829-25bb337b6646.png' ) no-repeat top / cover;">
+              <div class="review__bg lazy" data-src="image/review/photo-1468546818829-25bb337b6646.png">
                 <div class="review__trigger">
                   <div class="review__hover">
                     <h4 class="review__title">Константин Спилберг</h4>
@@ -218,7 +219,7 @@
           <!-- Review popup 4 end-->
           <div class="review__elem">
             <article class="review__review">
-              <div class="review__bg" style="background: url( 'image/review/photo-1438763298591-75a0d42b7265.png' ) no-repeat top / cover;">
+              <div class="review__bg lazy" data-src="image/review/photo-1438763298591-75a0d42b7265.png">
                 <div class="review__trigger">
                   <div class="review__hover">
                     <h4 class="review__title">Константин Спилберг</h4>
@@ -240,7 +241,7 @@
           <!-- Review popup 5 end-->
           <div class="review__elem">
             <article class="review__review">
-              <div class="review__bg" style="background: url( 'image/review/photo-1461332682233-b818af4c3a6e.png' ) no-repeat top / cover;">
+              <div class="review__bg lazy" data-src="image/review/photo-1461332682233-b818af4c3a6e.png">
                 <div class="review__trigger">
                   <div class="review__hover">
                     <h4 class="review__title">Константин Спилберг</h4>
@@ -262,7 +263,7 @@
           <!-- Review popup 6 end-->
           <div class="review__elem">
             <article class="review__review">
-              <div class="review__bg" style="background: url( 'image/review/photo-1457706924510-773f3c796de3.png' ) no-repeat top / cover;">
+              <div class="review__bg lazy" data-src="image/review/photo-1457706924510-773f3c796de3.png">
                 <div class="review__trigger">
                   <div class="review__hover">
                     <h4 class="review__title">Константин Спилберг</h4>
@@ -284,7 +285,7 @@
           <!-- Review popup 7 end-->
           <div class="review__elem">
             <article class="review__review">
-              <div class="review__bg" style="background: url( 'image/review/photo-1458696765561-12142eaead131.png' ) no-repeat top / cover;">
+              <div class="review__bg lazy" data-src="image/review/photo-1458696765561-12142eaead131.png">
                 <div class="review__trigger">
                   <div class="review__hover">
                     <h4 class="review__title">Константин Спилберг</h4>
@@ -343,8 +344,6 @@
       </section>
     </div>
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
-    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="lib/fancybox/jquery.fancybox.min.js"></script>
     <script src="main.min.js"></script>
   </body>
 </html>
