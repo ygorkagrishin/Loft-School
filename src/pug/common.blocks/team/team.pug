@@ -1,54 +1,103 @@
 section.team.section
     .team__bg.lazy( data-src="image/team/SBS_1255-X2.png" )
         .team__row
-            .team__col
-                h2.team__title.section__title Команда
-                article.acco
-                    section.acco__section
-                        h4.acco__name Дэниэл Рэдклиф
-                        .acco__row.acco__cont
-                            .acco__image
-                                .acco__circle
-                                    img(src="image/team/.png", alt="acco pic").acco__pic
-                            .acco__helper
-                                .acco__post Оператор
-                                p.acco__text
-                                | С радостью поможет подобрать 
-                                | идеальный бургер и оформить заказ. 
-                    section.acco__section
-                        h4.acco__name Ричард Джеймс
-                        .acco__row.acco__cont
-                            .acco__image
-                                .acco__circle
-                                    img(src="image/team/.png", alt="acco pic").acco__pic
-                            .acco__helper
-                                .acco__post Оператор
-                                p.acco__text
-                                | С радостью поможет подобрать 
-                                | идеальный бургер и оформить заказ. 
-                    section.acco__section
-                        h4.acco__name Джейк Финн
-                        .acco__row.acco__cont
-                            .acco__image
-                                .acco__circle
-                                    img(src="image/team/.png", alt="acco pic").acco__pic
-                            .acco__helper
-                                .acco__post Оператор
-                                p.acco__text
-                                | С радостью поможет подобрать 
-                                | идеальный бургер и оформить заказ. 
-                    section.acco__section
-                        h4.acco__name Николай Иванов
-                        .acco__row.acco__cont
-                            .acco__image
-                                .acco__circle
-                                    img(src="image/team/.png", alt="acco pic").acco__pic
-                            .acco__helper
-                                .acco__post Оператор
-                                p.acco__text
-                                | С радостью поможет подобрать 
-                                | идеальный бургер и оформить заказ.                                         
+            .team__col.team__col_prop_center
+                .wrap-cont
+                    h2.team__title.section__title Команда
+                    article.acco
+
+                        // Acco section 1 
+                        .acco__row
+                            section.acco__section
+                                .acco__header
+                                    // Polygon
+                                    div.acco__elem
+                                        img.acco__polygon-pic(src="image/team/Polygon.png", alt="polygon")
+                                    // Polygon end
+                                    // Acco name 
+                                    div.acco__elem
+                                        h4.acco__name Дэниэл Рэдклиф
+                                    // Acco name end
+                                .acco__cont.acco__cont_visibility_false
+                                    .acco__image
+                                        .acco__circle
+                                            img(src="image/team/.png", alt="acco pic").acco__pic
+                                    .acco__helper
+                                        .acco__post Оператор
+                                        p.acco__text
+                                            | С радостью поможет подобрать 
+                                            | идеальный бургер и оформить заказ. 
+                        // Acco section 1 end
+
+                        // Acco section 2
+                        .acco__row
+                            section.acco__section
+                                .acco__header
+                                    // Polygon
+                                    div.acco__elem    
+                                        img.acco__polygon(src="image/team/Polygon.png", alt="polygon")
+                                    // Polygon end
+                                    // Acco name
+                                    div.acco__elem
+                                        h4.acco__name Ричард Джеймс
+                                    // Acco name end
+                                .acco__cont.acco__cont_visibility_true
+                                    .acco__image
+                                        .acco__circle
+                                            img(src="image/team/aphex.png", alt="acco pic").acco__pic
+                                    .acco__helper
+                                        .acco__post Оператор
+                                        p.acco__text
+                                            | С радостью поможет подобрать 
+                                            | идеальный бургер и оформить заказ. 
+                        // Acco section 2 end
+
+                        // Acco section 3                 
+                        .acco__row                
+                            section.acco__section
+                                .acco__header
+                                    // Polygon
+                                    div.acco__elem
+                                        img.acco__polygon(src="image/team/Polygon.png", alt="polygon")   
+                                    // Polygon end
+                                    // Acco name end
+                                    div.acco__elem
+                                        h4.acco__name Джейк Финн
+                                    // Acco name end
+                                .acco__cont.acco__cont_visibility_false
+                                    .acco__image
+                                        .acco__circle
+                                            img(src="image/team/.png", alt="acco pic").acco__pic
+                                    .acco__helper
+                                        .acco__post Оператор
+                                        p.acco__text
+                                            | С радостью поможет подобрать 
+                                            | идеальный бургер и оформить заказ. 
+                        // Acco section 3 end
+
+                        // Acco section 4 
+                        .acco__row                
+                            section.acco__section
+                                .acco__header
+                                    // Polygon 
+                                    div.acco__elem
+                                        img.acco__polygon(src="image/team/Polygon.png", alt="polygon") 
+                                    // Polygon end
+                                    // Acco name
+                                    div.acco__elem
+                                        h4.acco__name Николай Иванов
+                                    // Acco name end
+                                .acco__cont.acco__cont_visibility_false
+                                    .acco__image
+                                        .acco__circle
+                                            img(src="image/team/.png", alt="acco pic").acco__pic
+                                    .acco__helper
+                                        .acco__post Оператор
+                                        p.acco__text
+                                            | С радостью поможет подобрать 
+                                            | идеальный бургер и оформить заказ.
+                        // Acco section 4 end                                         
 
 
 
-            
+                
