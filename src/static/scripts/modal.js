@@ -1,54 +1,59 @@
 var PopUp = function ( param ) {
 
-var self = this;
+'use strict';
 
-var privates = {};
+var privates = {}
 
 privates.param = param;
 
+privates.container = document.querySelector( privates.param.container );
+
 privates.sel = {
-  'btn': document.getElementsByClassName( privates.param.btn ),  
-  'module': document.getElementsByClassName( privates.param.module ),
-  'close' : document.getElementsByClassName( privates.param.close )
+  isVisibilityFalse : privates.param.isVisibilityFalse,
+  isVisibilityTrue  : privates.param.isVisibilityTrue
+  }
+
+privates.comp = {
+  btn : privates.param.btn,
+  close : privates.param.close
   }
 
 privates.attr = privates.param.attr;
 
-privates.open = function ( e ) {
+privates.currentElement;
+
+privates.close = function () {
+  privates.currentElement.classList.remove( privates.sel.isVisibilityTrue );
+  privates.currentElement.classList.add( privates.sel.isVisibilityFalse );
+}
+
+privates.handler = function ( e ) {
   e.preventDefault();
 
-  var attrValue = this.getAttribute( privates.attr );
-  var module = document.querySelector( attrValue );
-  if ( module.classList.contains( 'popup__visibility__false' ) ) {
-    module.classList.remove( 'popup__visibility__false' );
-    module.classList.add( 'popup__visibility__true' );
-    }
+  if ( e.target.classList.contains( privates.comp.btn ) ) {
+    var getValue = e.target.getAttribute( privates.attr );
+    privates.currentElement = document.querySelector( getValue );
+    if ( privates.currentElement.classList.contains( privates.sel.isVisibilityFalse ) ) {
+      privates.currentElement.classList.remove( privates.sel.isVisibilityFalse );
+      privates.currentElement.classList.add( privates.sel.isVisibilityTrue );  } 
+  }
+  else if ( e.target.classList.contains( privates.comp.close ) ) {
+    if ( privates.currentElement.classList.contains( privates.sel.isVisibilityTrue ) ) {
+      privates.close(); } 
+    }  
   }
 
-privates.close = function ( e ) {
-  e.preventDefault(); 
- 
-  for ( var indx = 0; indx <= privates.sel.module.length - 1; indx++ ) {
-    privates.sel.module[ indx ].classList.remove( 'popup__visibility__true' );
-    privates.sel.module[ indx ].classList.add( 'popup__visibility__false' );
-    }
-  }
-
-for ( var indx = 0; indx <= privates.sel.btn.length - 1; indx++ ) {
-  privates.sel.btn[ indx ].addEventListener( 'click', privates.open );
-  }
-
-for ( var indx = 0; indx <= privates.sel.close.length - 1; indx++ ) {
-  privates.sel.close[ indx ].addEventListener( 'click', privates.close );  
-  }
+privates.container.addEventListener( 'click', privates.handler ); 
 
 }
 
 var popUp = new PopUp(
-    {
-        'btn': 'js-popup__btn',
-        'attr': 'data-popup',
-        'module': 'popup',
-        'close': 'js-popup__close'
-    }
+  {
+    container: '.js-review',
+    btn: 'js-popup__btn',
+    close: 'js-review__popup-close',
+    attr: 'data-popup',
+    isVisibilityFalse: 'review__popup_visibility_false',
+    isVisibilityTrue: 'review__popup_visibility_true'
+  }
 );
