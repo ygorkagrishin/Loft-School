@@ -1,0 +1,41 @@
+.popup
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999999;
+    width: 100%;
+    height: 100%;
+    background-color: rgba( primaryBlack,.9 );
+
+.popup__row
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+
+.popup__cont
+    position: relative;
+    width: 61%;
+    padding: 24px 20px;
+    background-color: primaryWhite;
+    border-radius: 5px; 
+
+.popup__title
+    margin-bottom: 12px;
+    font: 14px / 28px gagalinregular;
+
+.popup__text
+    font: 14px / 24px ubuntulight;   
+
+.popup__close
+    position: absolute;
+    top: 8.5%;
+    right: 4%;
+    z-index: 999;
+    cursor: pointer;
+
+.popup__visibility__false
+    display: none;
+
+.popup__visibility_true
+    display: block;

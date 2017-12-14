@@ -131,21 +131,21 @@
             <div class="team__col team__col_prop_center">
               <div class="wrap-cont">
                 <h2 class="team__title section__title">Команда</h2>
-                <article class="acco">
+                <article class="acco" id="acco">
                   <!-- Acco section 1 -->
                   <div class="acco__row">
-                    <section class="acco__section">
+                    <section class="acco__section js-acco__section">
                       <div class="acco__header">
                         <!-- Polygon-->
                         <div class="acco__elem"><img class="acco__polygon-pic" src="image/team/Polygon.png" alt="polygon"></div>
                         <!-- Polygon end-->
                         <!-- Acco name -->
                         <div class="acco__elem">
-                          <h4 class="acco__name">Дэниэл Рэдклиф</h4>
+                          <h4 class="acco__name js-acco__trigger">Дэниэл Рэдклиф</h4>
                         </div>
                         <!-- Acco name end-->
                       </div>
-                      <div class="acco__cont acco__cont_visibility_false">
+                      <div class="acco__cont acco__cont_visibility_false js-acco__cont">
                         <div class="acco__image">
                           <div class="acco__circle"><img class="acco__pic" src="image/team/aphex.png" alt="acco pic"></div>
                         </div>
@@ -162,18 +162,18 @@
                   <!-- Acco section 1 end-->
                   <!-- Acco section 2-->
                   <div class="acco__row">
-                    <section class="acco__section">
+                    <section class="acco__section js-acco__section">
                       <div class="acco__header">
                         <!-- Polygon-->
                         <div class="acco__elem">   <img class="acco__polygon" src="image/team/Polygon.png" alt="polygon"></div>
                         <!-- Polygon end-->
                         <!-- Acco name-->
                         <div class="acco__elem">
-                          <h4 class="acco__name">Ричард Джеймс</h4>
+                          <h4 class="acco__name js-acco__trigger">Ричард Джеймс</h4>
                         </div>
                         <!-- Acco name end-->
                       </div>
-                      <div class="acco__cont acco__cont_visibility_true">
+                      <div class="acco__cont acco__cont_visibility_true js-acco__cont">
                         <div class="acco__image">
                           <div class="acco__circle"><img class="acco__pic" src="image/team/aphex.png" alt="acco pic"></div>
                         </div>
@@ -190,18 +190,18 @@
                   <!-- Acco section 2 end-->
                   <!-- Acco section 3                 -->
                   <div class="acco__row">               
-                    <section class="acco__section">
+                    <section class="acco__section js-acco__section">
                       <div class="acco__header">
                         <!-- Polygon-->
                         <div class="acco__elem"><img class="acco__polygon" src="image/team/Polygon.png" alt="polygon"></div>
                         <!-- Polygon end-->
                         <!-- Acco name end-->
                         <div class="acco__elem">
-                          <h4 class="acco__name">Джейк Финн</h4>
+                          <h4 class="acco__name js-acco__trigger">Джейк Финн</h4>
                         </div>
                         <!-- Acco name end-->
                       </div>
-                      <div class="acco__cont acco__cont_visibility_false">
+                      <div class="acco__cont acco__cont_visibility_false js-acco__cont">
                         <div class="acco__image">
                           <div class="acco__circle"><img class="acco__pic" src="image/team/aphex.png" alt="acco pic"></div>
                         </div>
@@ -218,18 +218,18 @@
                   <!-- Acco section 3 end-->
                   <!-- Acco section 4 -->
                   <div class="acco__row">               
-                    <section class="acco__section">
+                    <section class="acco__section js-acco__section">
                       <div class="acco__header">
                         <!-- Polygon -->
                         <div class="acco__elem"><img class="acco__polygon" src="image/team/Polygon.png" alt="polygon"></div>
                         <!-- Polygon end-->
                         <!-- Acco name-->
                         <div class="acco__elem">
-                          <h4 class="acco__name">Николай Иванов</h4>
+                          <h4 class="acco__name js-acco__trigger">Николай Иванов</h4>
                         </div>
                         <!-- Acco name end-->
                       </div>
-                      <div class="acco__cont acco__cont_visibility_false">
+                      <div class="acco__cont acco__cont_visibility_false js-acco__cont">
                         <div class="acco__image">
                           <div class="acco__circle"><img class="acco__pic" src="image/team/aphex.png" alt="acco pic"></div>
                         </div>
@@ -266,12 +266,32 @@
                         котлетка такой сочной, а сыр таким расплавленным.
                       </p>
                     </div>
-                    <div class="review__btn"><a class="btn__more btn__more_effect_hover" data-fancybox data-src="#review-1" href="javascript:;">Подробнее</a><a class="btn__read btn__read_effect_hover" data-fancybox data-src="#review-1" href="javascript:;">Читать отзыв</a></div>
+                    <div class="review__btn"><a class="btn__more btn__more_effect_hover js-popup__btn" data-popup="#review-1" href="#">Подробнее</a><a class="btn__read btn__read_effect_hover js-popup__btn" data-popup="#review-1" href="#">Читать отзыв</a></div>
                   </div>
                 </div>
               </div>
             </article>
           </div>
+          <!-- Review popup 1-->
+          <div class="popup popup__visibility__false" id="review-1">
+            <div class="popup__row">
+              <div class="popup__cont">
+                <div class="popup__title">Константин Спилберг</div>
+                <p class="popup__text">
+                  Мысли все о них и о них, о них и о них. 
+                  Нельзя устоять, невозможно забыть... Никогда не думал, 
+                  что булочки могут быть такими мягкими, 
+                  котлетка такой сочной, а сыр таким расплавленным.
+                  Мысли все о них и о них, о них и о них. 
+                  Нельзя устоять, невозможно забыть... Никогда не думал, 
+                  что булочки могут быть такими мягкими, 
+                  котлетка такой сочной, а сыр таким расплавленным.
+                </p>
+                <div class="popup__close"><img class="js-popup__close" src="image/review/close.png" alt="popup close"></div>
+              </div>
+            </div>
+          </div>
+          <!-- Review popup 1 end-->
           <div class="review__elem">
             <article class="review__review">
               <div class="review__bg lazy" data-src="image/review/photo-1440606797942-6cc04c045447.png">
@@ -286,12 +306,32 @@
                         котлетка такой сочной, а сыр таким расплавленным.    
                       </p>
                     </div>
-                    <div class="review__btn"><a class="btn__more btn__more_effect_hover" href="#">Подробнее</a><a class="btn__read btn__read_effect_hover" href="#">Читать отзыв</a></div>
+                    <div class="review__btn"><a class="btn__more btn__more_effect_hover js-popup__btn" data-popup="#review-2" href="#">Подробнее</a><a class="btn__read btn__read_effect_hover js-popup__btn" data-popup="#review-2" href="#">Читать отзыв</a></div>
                   </div>
                 </div>
               </div>
             </article>
           </div>
+          <!-- Review popup 2-->
+          <div class="popup popup__visibility__false" id="review-2">
+            <div class="popup__row">
+              <div class="popup__cont">
+                <div class="popup__title">Константин Спилберг</div>
+                <p class="popup__text">
+                  Мысли все о них и о них, о них и о них. 
+                  Нельзя устоять, невозможно забыть... Никогда не думал, 
+                  что булочки могут быть такими мягкими, 
+                  котлетка такой сочной, а сыр таким расплавленным.
+                  Мысли все о них и о них, о них и о них. 
+                  Нельзя устоять, невозможно забыть... Никогда не думал, 
+                  что булочки могут быть такими мягкими, 
+                  котлетка такой сочной, а сыр таким расплавленным.
+                </p>
+                <div class="popup__close"><img class="js-popup__close" src="image/review/close.png" alt="popup close"></div>
+              </div>
+            </div>
+          </div>
+          <!-- Review popup 2 end       -->
           <div class="review__elem">
             <article class="review__review">
               <div class="review__bg lazy" data-src="image/review/photo-1445404590072-16ef9c18bd83.png">
@@ -306,12 +346,32 @@
                         котлетка такой сочной, а сыр таким расплавленным.
                       </p>
                     </div>
-                    <div class="review__btn"><a class="btn__more btn__more_effect_hover" href="#">Подробнее  </a><a class="btn__read btn__read_effect_hover" href="#">Читать отзыв</a></div>
+                    <div class="review__btn"><a class="btn__more btn__more_effect_hover js-popup__btn" data-popup="#review-3" href="#">Подробнее</a><a class="btn__read btn__read_effect_hover js-popup__btn" data-popup="#review-3" href="#">Читать отзыв</a></div>
                   </div>
                 </div>
               </div>
             </article>
           </div>
+          <!-- Review popup 3-->
+          <div class="popup popup__visibility__false" id="review-3">
+            <div class="popup__row">
+              <div class="popup__cont">
+                <div class="popup__title">Константин Спилберг</div>
+                <p class="popup__text">
+                  Мысли все о них и о них, о них и о них. 
+                  Нельзя устоять, невозможно забыть... Никогда не думал, 
+                  что булочки могут быть такими мягкими, 
+                  котлетка такой сочной, а сыр таким расплавленным.
+                  Мысли все о них и о них, о них и о них. 
+                  Нельзя устоять, невозможно забыть... Никогда не думал, 
+                  что булочки могут быть такими мягкими, 
+                  котлетка такой сочной, а сыр таким расплавленным.
+                </p>
+                <div class="popup__close"><img class="js-popup__close" src="image/review/close.png" alt="popup close"></div>
+              </div>
+            </div>
+          </div>
+          <!-- Review popup 3 end-->
           <div class="review__elem">
             <article class="review__review">
               <div class="review__bg lazy" data-src="image/review/photo-1468546818829-25bb337b6646.png">
@@ -326,12 +386,32 @@
                         котлетка такой сочной, а сыр таким расплавленным.
                       </p>
                     </div>
-                    <div class="review__btn"><a class="btn__more btn__more_effect_hover" href="#">Подробнее</a><a class="btn__read btn__read_effect_hover" href="#">Читать отзыв </a></div>
+                    <div class="review__btn"><a class="btn__more btn__more_effect_hover js-popup__btn" data-popup="#review-4" href="#">Подробнее</a><a class="btn__read btn__read_effect_hover js-popup__btn" data-popup="#review-4" href="#">Читать отзыв</a></div>
                   </div>
                 </div>
               </div>
             </article>
           </div>
+          <!-- Review popup 4-->
+          <div class="popup popup__visibility__false" id="review-4">
+            <div class="popup__row">
+              <div class="popup__cont">
+                <div class="popup__title">Константин Спилберг</div>
+                <p class="popup__text">
+                  Мысли все о них и о них, о них и о них. 
+                  Нельзя устоять, невозможно забыть... Никогда не думал, 
+                  что булочки могут быть такими мягкими, 
+                  котлетка такой сочной, а сыр таким расплавленным.
+                  Мысли все о них и о них, о них и о них. 
+                  Нельзя устоять, невозможно забыть... Никогда не думал, 
+                  что булочки могут быть такими мягкими, 
+                  котлетка такой сочной, а сыр таким расплавленным.
+                </p>
+                <div class="popup__close"><img class="js-popup__close" src="image/review/close.png" alt="popup close"></div>
+              </div>
+            </div>
+          </div>
+          <!-- Review popup 4 end-->
           <div class="review__elem">
             <article class="review__review">
               <div class="review__bg lazy" data-src="image/review/photo-1438763298591-75a0d42b7265.png">
@@ -346,12 +426,32 @@
                         котлетка такой сочной, а сыр таким расплавленным.
                       </p>
                     </div>
-                    <div class="review__btn"><a class="btn__more btn__more_effect_hover" href="#">Подробнее</a><a class="btn__read btn__read_effect_hover" href="#">Читать отзыв</a></div>
+                    <div class="review__btn"><a class="btn__more btn__more_effect_hover js-popup__btn" data-popup="#review-5" href="#">Подробнее</a><a class="btn__read btn__read_effect_hover js-popup__btn" data-popup="#review-5" href="#">Читать отзыв</a></div>
                   </div>
                 </div>
               </div>
             </article>
           </div>
+          <!-- Review popup 5-->
+          <div class="popup popup__visibility__false" id="review-5">
+            <div class="popup__row">
+              <div class="popup__cont">
+                <div class="popup__title">Константин Спилберг</div>
+                <p class="popup__text">
+                  Мысли все о них и о них, о них и о них. 
+                  Нельзя устоять, невозможно забыть... Никогда не думал, 
+                  что булочки могут быть такими мягкими, 
+                  котлетка такой сочной, а сыр таким расплавленным.
+                  Мысли все о них и о них, о них и о них. 
+                  Нельзя устоять, невозможно забыть... Никогда не думал, 
+                  что булочки могут быть такими мягкими, 
+                  котлетка такой сочной, а сыр таким расплавленным.
+                </p>
+                <div class="popup__close"><img class="js-popup__close" src="image/review/close.png" alt="popup close"></div>
+              </div>
+            </div>
+          </div>
+          <!-- Review popup 5 end-->
           <div class="review__elem">
             <article class="review__review">
               <div class="review__bg lazy" data-src="image/review/photo-1461332682233-b818af4c3a6e.png">
@@ -366,12 +466,32 @@
                         котлетка такой сочной, а сыр таким расплавленным.
                       </p>
                     </div>
-                    <div class="review__btn"><a class="btn__more btn__more_effect_hover" href="#">Подробнее</a><a class="btn__read btn__read_effect_hover" href="#">Читать отзыв</a></div>
+                    <div class="review__btn"><a class="btn__more btn__more_effect_hover js-popup__btn" data-popup="#review-6" href="#">Подробнее</a><a class="btn__read btn__read_effect_hover js-popup__btn" data-popup="#review-6" href="#">Читать отзыв</a></div>
                   </div>
                 </div>
               </div>
             </article>
           </div>
+          <!-- Review popup 6-->
+          <div class="popup popup__visibility__false" id="review-6">
+            <div class="popup__row">
+              <div class="popup__cont">
+                <div class="popup__title">Константин Спилберг</div>
+                <p class="popup__text">
+                  Мысли все о них и о них, о них и о них. 
+                  Нельзя устоять, невозможно забыть... Никогда не думал, 
+                  что булочки могут быть такими мягкими, 
+                  котлетка такой сочной, а сыр таким расплавленным.
+                  Мысли все о них и о них, о них и о них. 
+                  Нельзя устоять, невозможно забыть... Никогда не думал, 
+                  что булочки могут быть такими мягкими, 
+                  котлетка такой сочной, а сыр таким расплавленным.
+                </p>
+                <div class="popup__close"><img class="js-popup__close" src="image/review/close.png" alt="popup close"></div>
+              </div>
+            </div>
+          </div>
+          <!-- Review popup 6 end-->
           <div class="review__elem">
             <article class="review__review">
               <div class="review__bg lazy" data-src="image/review/photo-1457706924510-773f3c796de3.png">
@@ -386,12 +506,32 @@
                         котлетка такой сочной, а сыр таким расплавленным.
                       </p>
                     </div>
-                    <div class="review__btn"><a class="btn__more btn__more_effect_hover" href="#">Подробнее</a><a class="btn__read btn__read_effect_hover" href="#">Читать отзыв</a></div>
+                    <div class="review__btn"><a class="btn__more btn__more_effect_hover js-popup__btn" data-popup="#review-7" href="#">Подробнее</a><a class="btn__read btn__read_effect_hover js-popup__btn" data-popup="#review-7" href="#">Читать отзыв</a></div>
                   </div>
                 </div>
               </div>
             </article>
           </div>
+          <!-- Review popup 7-->
+          <div class="popup popup__visibility__false" id="review-7">
+            <div class="popup__row">
+              <div class="popup__cont">
+                <div class="popup__title">Константин Спилберг</div>
+                <p class="popup__text">
+                  Мысли все о них и о них, о них и о них. 
+                  Нельзя устоять, невозможно забыть... Никогда не думал, 
+                  что булочки могут быть такими мягкими, 
+                  котлетка такой сочной, а сыр таким расплавленным.
+                  Мысли все о них и о них, о них и о них. 
+                  Нельзя устоять, невозможно забыть... Никогда не думал, 
+                  что булочки могут быть такими мягкими, 
+                  котлетка такой сочной, а сыр таким расплавленным.
+                </p>
+                <div class="popup__close"><img class="js-popup__close" src="image/review/close.png" alt="popup close"></div>
+              </div>
+            </div>
+          </div>
+          <!-- Review popup 7 end-->
           <div class="review__elem">
             <article class="review__review">
               <div class="review__bg lazy" data-src="image/review/photo-1458696765561-12142eaead131.png">
@@ -406,12 +546,32 @@
                         котлетка такой сочной, а сыр таким расплавленным.
                       </p>
                     </div>
-                    <div class="review__btn"><a class="btn__more btn__more_effect_hover" href="#">Подробнее</a><a class="btn__read btn__read_effect_hover" href="#">Читать отзыв</a></div>
+                    <div class="review__btn"><a class="btn__more btn__more_effect_hover js-popup__btn" data-popup="#review-8" href="#">Подробнее</a><a class="btn__read btn__read_effect_hover js-popup__btn" data-popup="#review-8" href="#">Читать отзыв</a></div>
                   </div>
                 </div>
               </div>
             </article>
           </div>
+          <!-- Review popup 8-->
+          <div class="popup popup__visibility__false" id="review-8">
+            <div class="popup__row">
+              <div class="popup__cont">
+                <div class="popup__title">Константин Спилберг</div>
+                <p class="popup__text">
+                  Мысли все о них и о них, о них и о них. 
+                  Нельзя устоять, невозможно забыть... Никогда не думал, 
+                  что булочки могут быть такими мягкими, 
+                  котлетка такой сочной, а сыр таким расплавленным.
+                  Мысли все о них и о них, о них и о них. 
+                  Нельзя устоять, невозможно забыть... Никогда не думал, 
+                  что булочки могут быть такими мягкими, 
+                  котлетка такой сочной, а сыр таким расплавленным.
+                </p>
+                <div class="popup__close"><img class="js-popup__close" src="image/review/close.png" alt="popup close"></div>
+              </div>
+            </div>
+          </div>
+          <!-- Review popup 8 end-->
         </div>
       </section>
     </div>
