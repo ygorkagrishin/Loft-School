@@ -33,13 +33,16 @@ privates.close = function () {
         arrows = privates.acco.getElementsByClassName( privates.components.arrow );
 
     for ( var indx = 0; indx <= sections.length - 1; indx++ ) {
-        if ( sections[ indx ].classList.contains( privates.components.section + '_is_active' ) ||
-            containers[ indx ].classList.contains( privates.class.isVisibilityTrue ) ) {
+        if ( sections[indx].classList.contains( privates.param.section + '_is_active' ) ) {
             sections[ indx ].classList.remove( privates.components.section + '_is_active' );
-            containers[ indx ].classList.remove( privates.class.isVisibilityTrue );
-            arrows[ indx ].classList.remove( privates.class.isActive );
-            containers[ indx ].classList.add( privates.class.isVisibilityFalse );
-            arrows[ indx ].classList.add( privates.class.isNotActive );
+            if ( containers[indx].classList.contains( privates.class.isVisibilityTrue ) ) {
+                containers[ indx ].classList.remove( privates.class.isVisibilityTrue );
+                containers[ indx ].classList.add( privates.class.isVisibilityFalse );
+                if ( arrows[ indx ].classList.contains( privates.class.isActive ) ) {
+                    arrows[ indx ].classList.remove( privates.class.isActive );
+                    arrows[ indx ].classList.add( privates.class.isNotActive );
+                }
+            }
         }
     }
 }
