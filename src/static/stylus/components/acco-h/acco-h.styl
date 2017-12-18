@@ -1,0 +1,63 @@
+.acco-h
+    z-index: 1;
+    width: 100%;
+
+.acco-h__row
+    display: flex;
+    justify-content: flex-end;
+    height: 100%;
+
+.acco-h__col
+    display: flex;
+    justify-content: flex-end;
+
+.acco-h__pannel
+    position: relative;
+    width: 80px;
+    z-index: 3;
+    background: no-repeat center / cover;
+
+.acco-h__pannel_after_bg::after
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    display: block;
+    width: 100%;
+    height: 100%;   
+    background-color: rgba( primaryBlack,.7 );   
+
+.acco-h__trigger
+    cursor: ponter;
+
+.acco-h__title
+    position: absolute;
+    top: 50%; left: 50%;
+    z-index: 1;    
+    display: inline-block;
+    font: 40px / 64px gagalinregular;
+    white-space: nowrap;
+    color: primaryWhite;
+    transform: translate( -50%, -50% ) rotate( -90deg );
+
+.js-acco-h__container
+    overflow: hidden;
+
+.acco-h__cont
+    max-width: 540px;
+    padding: 54px 34px;
+    height: 100%;
+    background-color: rgba( primaryBlack,.9 ); 
+
+.acco-h__text
+    font: 14px / 24px ubuntulight;
+    color: primaryWhite; 
+
+.js-acco-h__container_visibility_false 
+    width: 0;
+    height: 0;
+
+.js-acco-h__container_visibility_true 
+    width: auto;
+    height: auto;              
