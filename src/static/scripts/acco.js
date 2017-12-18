@@ -22,6 +22,11 @@ privates.class = {
     isNotActive : privates.param.isNotActive
     }
 
+privates.directionY = { 
+    dYs : 0,
+    dYf : 0
+    }
+
 privates.close = function () {
     var sections = privates.acco.getElementsByClassName( privates.components.section ),
         containers = privates.acco.getElementsByClassName( privates.components.container ),
@@ -47,7 +52,6 @@ privates.open = function ( e ) {
         currentContainer,
         currentArrow;
 
-   // Looking for parent node
     while ( !currentElement.classList.contains( privates.components.section ) ) {
         currentElement = currentElement.parentNode;
         currentSection = currentElement;
@@ -67,6 +71,20 @@ privates.open = function ( e ) {
         }
         else { privates.close(); }    
     }
+
+privates.acco.addEventListener( 'touchstart', function ( e ) {
+
+    privates.directionY.dYs = e.changedTouches[0].screenY;
+
+    });
+
+privates.acco.addEventListener( 'touchend', function ( e ) {
+
+    privates.directionY.dYf = e.changedTouches[0].screenY;
+
+    if ( privates.directionY.dYs > privates.directionY.dYf ) { privates.close(); }
+
+    });
 
 privates.acco.addEventListener( 'click', privates.open);
 

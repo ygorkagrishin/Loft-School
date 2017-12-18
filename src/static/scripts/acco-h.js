@@ -1,25 +1,22 @@
 var Hor = function ( param ) {
 
+'use strict';
+
 var privates = {};
 
 privates.param = param;
 
 privates.acco = document.getElementById( privates.param.acco );
 
-privates.components = {
-    section: privates.param.section,
-    trigger: privates.param.trigger,
-    container: privates.param.container 
+privates.comp = {
+    section : privates.param.section,
+    trigger : privates.param.trigger,
+    container : privates.param.container
     }
 
-privates.className = {  
-    isVisibilityTrue : privates.param.isVisibilityTrue,
-    isVisibilityFalse : privates.param.isVisibilityFalse
-    }  
-
-privates.directionX = {
-    dXs : 0,
-    dXf : 0
+privates.class = {
+    isVisibilityFalse : privates.param.isVisibilityFalse,
+    isVisibilityTrue : privates.param.isVisibilityTrue
     }
 
 privates.directionY = {
@@ -27,39 +24,52 @@ privates.directionY = {
     dYf : 0
     }
 
+privates.directionX = {
+    dXs : 0,
+    dXf : 0
+    }    
+
 privates.close = function () {
-    var sections = privates.acco.getElementsByClassName( privates.components.section ),
-        containers = privates.acco.getElementsByClassName( privates.components.container );
+    var sections = privates.acco.getElementsByClassName( privates.comp.section ),
+        containers = privates.acco.getElementsByClassName( privates.comp.container );
     
     for ( var indx = 0; indx <= sections.length - 1; indx++ ) {
-        if ( sections[ indx ].classList.contains( privates.components.section + '_is_active' ) || 
-        containers[ indx ].classList.contains( privates.components.container ) ) {
-        sections[ indx ].classList.remove( privates.components.section + '_is_active' );
-        containers[ indx ].classList.remove( privates.className.isVisibilityTrue );
-        containers[ indx ].classList.add( privates.className.isVisibilityFalse );
-        } 
+        if ( !sections[indx].classList.contains( privates.class.isVisibilityTrue ) ) {
+            sections[indx].classList.remove( privates.param.section + '_is_active' );
+            if ( containers[indx].classList.contains( privates.class.isVisibilityTrue ) ) {
+                containers[indx].classList.remove( privates.class.isVisibilityTrue );
+                containers[indx].classList.add( privates.class.isVisibilityFalse );    
+            }
+        }
     }
 }
 
 privates.open = function ( e ) {
+    
     var target = e.target;
-    privates.close();
 
-    if ( target.classList.contains( privates.components.trigger ) ) {
+    if ( target.classList.contains( privates.comp.trigger ) ) {
+        
+        var currentElement = target,
+            currentSection,
+            currentContainer;
 
-        var currentElement = target;
+        while ( !currentElement.classList.contains( privates.comp.section ) ) {
+            currentElement = currentElement.parentNode;
+            currentSection = currentElement;
+        }
 
-        while ( !currentElement.classList.contains( privates.components.section ) ) {
-            currentElement = currentElement.parentNode; }
-            
-        container = currentElement.getElementsByClassName( privates.components.container )[0];    
-        if ( container.classList.contains( privates.className.isVisibilityFalse ) ) {
-            currentElement.classList.add( privates.components.section + '_is_active' );
-            container.classList.remove( privates.className.isVisibilityFalse );
-            container.classList.add( privates.className.isVisibilityTrue );
-            }   
-        }  
-    }
+        if ( !currentSection.classList.contains( privates.comp.section + '_is_active' ) ) {
+            privates.close();
+            currentContainer = currentSection.getElementsByClassName( privates.comp.container )[0];
+            if ( currentContainer.classList.contains( privates.class.isVisibilityFalse ) ) {
+                currentContainer.classList.remove( privates.class.isVisibilityFalse );
+                currentContainer.classList.add( privates.class.isVisibilityTrue );
+                currentSection.classList.add( privates.comp.section + '_is_active' );
+            }  
+        } else { privates.close(); }
+    } else { privates.close(); }
+}
 
 privates.acco.addEventListener( 'touchstart', function ( e ) {
     privates.directionY.dYs = e.changedTouches[0].screenY;
@@ -79,13 +89,11 @@ privates.acco.addEventListener( 'click', privates.open );
 
 }
 
-var hor = new Hor(
-    {
-        acco: 'acco-h',
-        section: 'acco-h__section',
-        trigger: 'acco-h__trigger',
-        container: 'js-acco-h__container',
-        isVisibilityTrue: 'js-acco-h__container_visibility_true',
-        isVisibilityFalse: 'js-acco-h__container_visibility_false'
-    }
-);
+var hor = new Hor({
+    acco : 'acco-h',
+    section : 'js-acco-h__section',
+    trigger : 'js-acco-h__trigger',
+    container : 'js-acco-h__container',
+    isVisibilityFalse : 'js-acco-h__container_visibility_false',
+    isVisibilityTrue : 'js-acco-h__container_visibility_true'
+});
