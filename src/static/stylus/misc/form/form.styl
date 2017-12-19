@@ -1,0 +1,71 @@
+.form__row
+    display: flex;
+
+.form__row_align_center
+    align-items: center;
+    height: 100%;
+
+.form__title
+    padding: 82px 0;
+    font: 72px / 64px gagalinregular;
+    color: primaryYellow;
+
+.form__title_align_center
+    text-align: center;
+
+.form__col
+    flex: 1;
+
+.form__cont_wrap_cont
+    margin-right: 20px;
+
+.form__row_wrap_row
+    margin-bottom: 14px;
+
+.form__col_wrap_col
+    margin-right: 20px;
+
+.form__name
+    font: 14px / 24px ubuntulight;
+    color: primaryWhite;
+
+.form__input_type_text
+    display: inline-block;
+    width: 100%;
+    padding: 9px 20px;
+    border: none;
+    border-radius: 5px;
+    outline-color: primaryYellow;
+
+.form__textarea
+    @extend .form__input_type_text;
+
+.form__helper_wrap_input
+    margin-right: 20px;
+
+.form__input_type_radio,
+.form__input_type_checkbox
+    display: none;  
+
+.form__input_type_radio + label::before
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+    vertical-align: -2px;
+    border-radius: 50%;
+    background: primaryWhite url( 'image/form/Ellipse.png' ) no-repeat 4px 4px / 55%;   
+
+.form__input_type_checkbox + label::before
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+    vertical-align: -2px;
+    background: primaryWhite url( 'image/form/w128h1281338911632checkmark21.png' ) no-repeat 2px 2px / 85%;     
+    
+.form__btn
+    width: 100%;
+    padding: 6px 0; 
