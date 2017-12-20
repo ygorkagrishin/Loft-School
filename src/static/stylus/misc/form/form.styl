@@ -71,7 +71,10 @@
     margin-right: 8px;
     vertical-align: -2px;
     border-radius: 50%;
-    background: primaryWhite url( 'image/form/Ellipse.png' ) no-repeat 4px 4px / 55%;   
+    background: primaryWhite url( 'image/form/Ellipse.png' ) no-repeat -152px -260px / 55%;   
+
+.form__input_type_radio:checked + label::before
+    background-position: 4px 4px;
 
 .form__input_type_checkbox + label::before
     content: '';
@@ -80,8 +83,11 @@
     height: 16px;
     margin-right: 8px;
     vertical-align: -2px;
-    background: primaryWhite url( 'image/form/w128h1281338911632checkmark21.png' ) no-repeat 2px 2px / 85%;     
+    background: primaryWhite url( 'image/form/w128h1281338911632checkmark21.png' ) no-repeat -152px -260px / 85%;     
     
+.form__input_type_checkbox:checked + label::before
+    background-position: 2px 2px;
+
 .form__btn
     width: 100%;
     padding: 6px 0; 
