@@ -8,13 +8,13 @@ section.hero.section
                     header.header
                         .header__row
                             // logo
-                            .header__elem.header__elem_prop_grow-2
+                            .header__col.header__col_grow_md
                                 .logo
                                     object(data="svg/logo.svg", type="image/svg+xml").logo__logo
                             // logo-end
                             
                             // nav
-                            .header__elem
+                            .header__col
                                 nav.nav
                                     ul.nav__list
                                         li.nav__item.nav__item_after_spot
@@ -32,13 +32,13 @@ section.hero.section
                             // nav end
 
                             // btn order
-                            .header__elem
+                            .header__col
                                 .btn
                                     a.btn__order(href="#").hero__btn.btn__order_effect_hover Заказать
                             //btn order end
                             
                             // icon menu
-                            .header__elem.header__elem_prop_relative
+                            .header__col.header__col_pos_relative
                                 img(src="image/hero/close.png", alt="close").i-close.i-close_visible_false
                                 .i-menu
                                     span.i-menu__comp
