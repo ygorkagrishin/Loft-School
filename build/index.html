@@ -82,10 +82,10 @@
       <section class="we section">
         <div class="we__bg lazy" data-src="image/we/bg1.png">
           <div class="container">
-            <div class="we__center">
+            <div class="we__row we__row_align_center">
               <div class="wrap-cont">
                 <h2 class="we__heading_align_center section__heading">Мы лучшие</h2>
-                <div class="we__row">
+                <div class="we__row we__main">
                   <!-- Meat-->
                   <div class="we__col we__col_margin_right">
                     <article class="we__cont we__meat">
@@ -142,6 +142,66 @@
       </section>
       <!-- We end-->
       <!-- Burgers-->
+      <section class="burger section">
+        <div class="burger__bg">
+          <div class="container">
+            <div class="burger__row burger__row_align_center">
+              <!-- carousel-->
+              <div class="caro burger__caro" id="js-carousel">
+                <div class="caro__container">
+                  <div class="caro__row">
+                    <!-- carousel-slide 1-->
+                    <div class="caro__col caro__col_grow_lg">
+                      <div class="caro__row caro__slide">
+                        <div class="caro__col caro__col_grow_md caro__burger"><img class="caro__pic" src="image/burgers/dark-beef-burger.png"></div>
+                        <div class="caro__col caro__col_grow_md caro__cont">
+                          <h2 class="caro__heading">Dark beef burger</h2>
+                          <p class="caro__text text">
+                            Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, 
+                            тремя кусочками нежнейшего сыра эмменталь, двумя помидорами, луком, 
+                            салатом и соусом гриль теперь с добавлением экзотического соуса чураско.
+                          </p>
+                          <div class="caro__row caro__footer">
+                            <div class="caro__col caro__col_sm caro__price"><span class="caro__price caro__price_size_lg">500</span>рублей </div>
+                            <div class="caro__col caro__col_sm caro__btn btn"><a class="btn__order" href="#">Заказать</a></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- carousel-slide 1 end-->
+                    <!-- carousel-slide 2-->
+                    <div class="caro__col caro__col_grow_lg">
+                      <div class="caro__row caro__slide">
+                        <div class="caro__col caro__col_grow_md caro__burger"><img class="caro__pic" src="image/burgers/dark-beef-burger.png"></div>
+                        <div class="caro__col caro__col_grow_md caro__cont">
+                          <h2 class="caro__heading">Dark beef burger</h2>
+                          <p class="caro__text text">
+                            Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, 
+                            тремя кусочками нежнейшего сыра эмменталь, двумя помидорами, луком, 
+                            салатом и соусом гриль теперь с добавлением экзотического соуса чураско.
+                          </p>
+                          <div class="caro__row caro__footer">
+                            <div class="caro__col caro__col_sm caro__price"><span class="caro__price caro__price_size_lg">500</span>рублей </div>
+                            <div class="caro__col caro__col_sm caro__btn btn"><a class="btn__order" href="#">Заказать</a></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- carousel-slide 2 end-->
+                  </div>
+                </div>
+                <div class="caro__arrow caro__arrow_way_prev caro__arrow_pos_left">
+                  <object data="svg/arrow-scroll.svg" type="image/svg+xml"></object>
+                </div>
+                <div class="caro__arrow caro__arrow_way_next caro__arrow_pos_right">
+                  <object data="svg/arrow-scroll.svg" type="image/svg+xml"></object>
+                </div>
+              </div>
+              <!-- carousel end-->
+            </div>
+          </div>
+        </div>
+      </section>
       <!-- Burgers end-->
       <!-- Team -->
       <section class="team section">
@@ -164,16 +224,18 @@
                         </div>
                         <!-- Acco name end-->
                       </div>
-                      <div class="acco__cont js-acco__container js-acco__container_visibility_false">
-                        <div class="acco__image">
-                          <div class="acco__circle"><img class="acco__pic" src="image/team/aphex.png" alt="acco pic"></div>
-                        </div>
-                        <div class="acco__helper">
-                          <div class="acco__post">Оператор</div>
-                          <p class="acco__text">
-                            С радостью поможет подобрать 
-                            идеальный бургер и оформить заказ.
-                          </p>
+                      <div class="js-acco__container js-acco__container_visibility_false">   
+                        <div class="acco__cont">
+                          <div class="acco__image">
+                            <div class="acco__circle"><img class="acco__pic" src="image/team/aphex.png" alt="acco pic"></div>
+                          </div>
+                          <div class="acco__helper">
+                            <div class="acco__post">Оператор</div>
+                            <p class="acco__text">
+                              С радостью поможет подобрать 
+                              идеальный бургер и оформить заказ.
+                            </p>
+                          </div>
                         </div>
                       </div>
                     </section>
@@ -192,16 +254,18 @@
                         </div>
                         <!-- Acco name end-->
                       </div>
-                      <div class="acco__cont js-acco__container js-acco__container_visibility_false">
-                        <div class="acco__image">
-                          <div class="acco__circle"><img class="acco__pic" src="image/team/aphex.png" alt="acco pic"></div>
-                        </div>
-                        <div class="acco__helper">
-                          <div class="acco__post">Оператор</div>
-                          <p class="acco__text">
-                            С радостью поможет подобрать 
-                            идеальный бургер и оформить заказ. 
-                          </p>
+                      <div class="js-acco__container js-acco__container_visibility_false">   
+                        <div class="acco__cont">
+                          <div class="acco__image">
+                            <div class="acco__circle"><img class="acco__pic" src="image/team/aphex.png" alt="acco pic"></div>
+                          </div>
+                          <div class="acco__helper">
+                            <div class="acco__post">Оператор</div>
+                            <p class="acco__text">
+                              С радостью поможет подобрать 
+                              идеальный бургер и оформить заказ. 
+                            </p>
+                          </div>
                         </div>
                       </div>
                     </section>
@@ -220,16 +284,18 @@
                         </div>
                         <!-- Acco name end-->
                       </div>
-                      <div class="acco__cont js-acco__container js-acco__container_visibility_false">
-                        <div class="acco__image">
-                          <div class="acco__circle"><img class="acco__pic" src="image/team/aphex.png" alt="acco pic"></div>
-                        </div>
-                        <div class="acco__helper">
-                          <div class="acco__post">Оператор</div>
-                          <p class="acco__text">
-                            С радостью поможет подобрать 
-                            идеальный бургер и оформить заказ.
-                          </p>
+                      <div class="js-acco__container js-acco__container_visibility_false">   
+                        <div class="acco__cont">
+                          <div class="acco__image">
+                            <div class="acco__circle"><img class="acco__pic" src="image/team/aphex.png" alt="acco pic"></div>
+                          </div>
+                          <div class="acco__helper">
+                            <div class="acco__post">Оператор</div>
+                            <p class="acco__text">
+                              С радостью поможет подобрать 
+                              идеальный бургер и оформить заказ.
+                            </p>
+                          </div>
                         </div>
                       </div>
                     </section>
@@ -248,16 +314,18 @@
                         </div>
                         <!-- Acco name end-->
                       </div>
-                      <div class="acco__cont js-acco__container js-acco__container_visibility_false">
-                        <div class="acco__image">
-                          <div class="acco__circle"><img class="acco__pic" src="image/team/aphex.png" alt="acco pic"></div>
-                        </div>
-                        <div class="acco__helper">
-                          <div class="acco__post">Оператор</div>
-                          <p class="acco__text">
-                            С радостью поможет подобрать 
-                            идеальный бургер и оформить заказ.
-                          </p>
+                      <div class="js-acco__container js-acco__container_visibility_false">   
+                        <div class="acco__cont">
+                          <div class="acco__image">
+                            <div class="acco__circle"><img class="acco__pic" src="image/team/aphex.png" alt="acco pic"></div>
+                          </div>
+                          <div class="acco__helper">
+                            <div class="acco__post">Оператор</div>
+                            <p class="acco__text">
+                              С радостью поможет подобрать 
+                              идеальный бургер и оформить заказ.
+                            </p>
+                          </div>
                         </div>
                       </div>
                     </section>
