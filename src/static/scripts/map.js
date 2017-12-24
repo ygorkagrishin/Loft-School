@@ -1,4 +1,4 @@
-/* ( function () {
+( function () {
 
 ymaps.ready(init);
   var myMap, myPlacemark;
@@ -27,4 +27,4 @@ for ( var indx = 0; indx <= coord.length - 1; indx++ ) {
   myMap.geoObjects.add(myPlacemark);  } 
 }
 
-})(); */
+})(); 
