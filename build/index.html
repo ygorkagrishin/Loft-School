@@ -149,7 +149,7 @@
               <!-- carousel-->
               <div class="caro burger__caro" id="js-carousel">
                 <div class="caro__container">
-                  <div class="caro__row">
+                  <div class="caro__row caro__wrap js-carousel__wrap">
                     <!-- carousel-slide 1-->
                     <div class="caro__col caro__col_grow_lg">
                       <div class="caro__row caro__slide">
@@ -166,13 +166,32 @@
                             <div class="caro__col caro__col_sm caro__btn btn"><a class="btn__order" href="#">Заказать</a></div>
                           </div>
                         </div>
+                        <div class="caro__comp caro__comp_pos_abs">
+                          <div class="js-caro__comp-trigger">
+                            <div class="caro__row caro__comp-inner">
+                              <div class="caro__col">
+                                <object data="svg/burger.svg" type="image/svg+xml"></object>
+                              </div>
+                              <div class="caro__col"><span class="caro__comp-text">Состав</span></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="caro__kkal caro__kkal_pos_abs">
+                          <div class="caro__row caro__kkal-inner">
+                            <div class="caro__col">
+                              <object data="svg/kkal.svg" type="image/svg+xml"></object>
+                            </div>
+                            <div class="caro__col"><span class="caro__kkal-text">ккал</span></div>
+                            <div class="caro__kkal-sum caro__kkal-sum_pos_abs">1200</div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                     <!-- carousel-slide 1 end-->
                     <!-- carousel-slide 2-->
                     <div class="caro__col caro__col_grow_lg">
                       <div class="caro__row caro__slide">
-                        <div class="caro__col caro__col_grow_md caro__burger"><img class="caro__pic" src="image/burgers/dark-beef-burger.png"></div>
+                        <div class="caro__col caro__col_grow_md caro__burger"><img class="caro__pic" src="image/burgers/burger_sandwich_PNG4124.png"></div>
                         <div class="caro__col caro__col_grow_md caro__cont">
                           <h2 class="caro__heading">Dark beef burger</h2>
                           <p class="caro__text text">
@@ -185,17 +204,148 @@
                             <div class="caro__col caro__col_sm caro__btn btn"><a class="btn__order" href="#">Заказать</a></div>
                           </div>
                         </div>
+                        <div class="caro__comp caro__comp_pos_abs">
+                          <div class="js-caro__comp-trigger">
+                            <div class="caro__row caro__comp-inner">
+                              <div class="caro__col">
+                                <object data="svg/burger.svg" type="image/svg+xml"></object>
+                              </div>
+                              <div class="caro__col"><span class="caro__comp-text">Состав</span></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="caro__kkal caro__kkal_pos_abs">
+                          <div class="caro__row caro__kkal-inner">
+                            <div class="caro__col">
+                              <object data="svg/kkal.svg" type="image/svg+xml"></object>
+                            </div>
+                            <div class="caro__col"><span class="caro__kkal-text">ккал</span></div>
+                            <div class="caro__kkal-sum caro__kkal-sum_pos_abs">1200</div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                     <!-- carousel-slide 2 end-->
+                    <!-- carousel-slide 3-->
+                    <div class="caro__col caro__col_grow_lg">
+                      <div class="caro__row caro__slide">
+                        <div class="caro__col caro__col_grow_md caro__burger"><img class="caro__pic" src="image/burgers/NYC-Diner-Bacon-Cheeseburger.png"></div>
+                        <div class="caro__col caro__col_grow_md caro__cont">
+                          <h2 class="caro__heading">Dark beef burger</h2>
+                          <p class="caro__text text">
+                            Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, 
+                            тремя кусочками нежнейшего сыра эмменталь, двумя помидорами, луком, 
+                            салатом и соусом гриль теперь с добавлением экзотического соуса чураско.
+                          </p>
+                          <div class="caro__row caro__footer">
+                            <div class="caro__col caro__col_sm caro__price"><span class="caro__price caro__price_size_lg">500</span>рублей </div>
+                            <div class="caro__col caro__col_sm caro__btn btn"><a class="btn__order" href="#">Заказать</a></div>
+                          </div>
+                        </div>
+                        <div class="caro__comp caro__comp_pos_abs">
+                          <div class="js-caro__comp-trigger">
+                            <div class="caro__row caro__comp-inner">
+                              <div class="caro__col">
+                                <object data="svg/burger.svg" type="image/svg+xml"></object>
+                              </div>
+                              <div class="caro__col"><span class="caro__comp-text">Состав</span></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="caro__kkal caro__kkal_pos_abs">
+                          <div class="caro__row caro__kkal-inner">
+                            <div class="caro__col">
+                              <object data="svg/kkal.svg" type="image/svg+xml"></object>
+                            </div>
+                            <div class="caro__col"><span class="caro__kkal-text">ккал</span></div>
+                            <div class="caro__kkal-sum caro__kkal-sum_pos_abs">1200</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- carousel-slide 3 end-->
+                    <!-- carousel-slide 4-->
+                    <div class="caro__col caro__col_grow_lg">
+                      <div class="caro__row caro__slide">
+                        <div class="caro__col caro__col_grow_md caro__burger"><img class="caro__pic" src="image/burgers/ChikenBurger.png"></div>
+                        <div class="caro__col caro__col_grow_md caro__cont">
+                          <h2 class="caro__heading">Dark beef burger</h2>
+                          <p class="caro__text text">
+                            Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, 
+                            тремя кусочками нежнейшего сыра эмменталь, двумя помидорами, луком, 
+                            салатом и соусом гриль теперь с добавлением экзотического соуса чураско.
+                          </p>
+                          <div class="caro__row caro__footer">
+                            <div class="caro__col caro__col_sm caro__price"><span class="caro__price caro__price_size_lg">500</span>рублей </div>
+                            <div class="caro__col caro__col_sm caro__btn btn"><a class="btn__order" href="#">Заказать</a></div>
+                          </div>
+                        </div>
+                        <div class="caro__comp caro__comp_pos_abs">
+                          <div class="js-caro__comp-trigger">
+                            <div class="caro__row caro__comp-inner">
+                              <div class="caro__col">
+                                <object data="svg/burger.svg" type="image/svg+xml"></object>
+                              </div>
+                              <div class="caro__col"><span class="caro__comp-text">Состав</span></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="caro__kkal caro__kkal_pos_abs">
+                          <div class="caro__row caro__kkal-inner">
+                            <div class="caro__col">
+                              <object data="svg/kkal.svg" type="image/svg+xml"></object>
+                            </div>
+                            <div class="caro__col"><span class="caro__kkal-text">ккал</span></div>
+                            <div class="caro__kkal-sum caro__kkal-sum_pos_abs">1200</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- carousel-slide 4 end-->
+                    <!-- carousel-slide 5-->
+                    <div class="caro__col caro__col_grow_lg">
+                      <div class="caro__row caro__slide">
+                        <div class="caro__col caro__col_grow_md caro__burger"><img class="caro__pic" src="image/burgers/Spicy_Shrimp_Burger.png"></div>
+                        <div class="caro__col caro__col_grow_md caro__cont">
+                          <h2 class="caro__heading">Dark beef burger</h2>
+                          <p class="caro__text text">
+                            Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, 
+                            тремя кусочками нежнейшего сыра эмменталь, двумя помидорами, луком, 
+                            салатом и соусом гриль теперь с добавлением экзотического соуса чураско.
+                          </p>
+                          <div class="caro__row caro__footer">
+                            <div class="caro__col caro__col_sm caro__price"><span class="caro__price caro__price_size_lg">500</span>рублей </div>
+                            <div class="caro__col caro__col_sm caro__btn btn"><a class="btn__order" href="#">Заказать</a></div>
+                          </div>
+                        </div>
+                        <div class="caro__comp caro__comp_pos_abs">
+                          <div class="js-caro__comp-trigger">
+                            <div class="caro__row caro__comp-inner">
+                              <div class="caro__col">
+                                <object data="svg/burger.svg" type="image/svg+xml"></object>
+                              </div>
+                              <div class="caro__col"><span class="caro__comp-text">Состав</span></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="caro__kkal caro__kkal_pos_abs">
+                          <div class="caro__row caro__kkal-inner">
+                            <div class="caro__col">
+                              <object data="svg/kkal.svg" type="image/svg+xml"></object>
+                            </div>
+                            <div class="caro__col"><span class="caro__kkal-text">ккал</span></div>
+                            <div class="caro__kkal-sum caro__kkal-sum_pos_abs">1200</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- carousel-slide 5 end-->
                   </div>
                 </div>
-                <div class="caro__arrow caro__arrow_way_prev caro__arrow_pos_left">
-                  <object data="svg/arrow-scroll.svg" type="image/svg+xml"></object>
-                </div>
-                <div class="caro__arrow caro__arrow_way_next caro__arrow_pos_right">
-                  <object data="svg/arrow-scroll.svg" type="image/svg+xml"></object>
-                </div>
+                <div class="caro__arrow caro__arrow_way_prev caro__arrow_pos_left js-carousel__prev"><a class="caro__arrow-trigger" href="#">
+                    <object data="svg/arrow-scroll.svg" type="image/svg+xml"></object></a></div>
+                <div class="caro__arrow caro__arrow_way_next caro__arrow_pos_right js-carousel__next"><a class="caro__arrow-trigger" href="#">
+                    <object data="svg/arrow-scroll.svg" type="image/svg+xml"></object></a></div>
               </div>
               <!-- carousel end-->
             </div>

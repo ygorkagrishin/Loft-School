@@ -8,18 +8,21 @@
 .caro__row
     display: flex;
 
+.js-carousel__wrap_is_active
+    will-change: transform;
+    transition: all .7s;
+
 .caro__col_grow_lg
     flex: 1 0 100%;
 
 .caro__slide
+    position: relative;
     align-items: center;
     min-height: 650px;
     padding: 82px 0;
-    border: 1px dashed red;
 
 .caro__col_grow_md
     width: 50%;
-    border: 1px dashed green;
 
 .caro__burger
     margin-right: 20px;
@@ -69,3 +72,49 @@
 
 .caro__arrow_pos_right
     right: -4.5%;   
+
+.caro__arrow-trigger
+    display: block;
+    cursor: pointer;
+
+.caro__comp_pos_abs
+    position: absolute;
+    top: 14%;
+    left: 0;
+
+.caro__comp-inner
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    height: 90px;
+    border-radius: 5px;
+    background: rgba( primaryOrange,.3 );
+
+.caro__comp-text
+    font: 14px / 1 gagalinregular;
+    color: primaryWhite;
+
+.caro__kkal_pos_abs
+    position: absolute;
+    left: 0;
+    bottom: 12%;
+
+.caro__kkal-inner
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+.caro__kkal-text
+    font: 14px / 24px gagalinregular;
+    color: primaryWhite;
+
+ .caro__kkal-sum
+     @extend .caro__kkal-text;
+     font-size: 20px;
+
+.caro__kkal-sum_pos_abs
+    position: absolute;
+    top: 32%;
+    left: 25%; 
