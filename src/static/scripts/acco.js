@@ -2,107 +2,84 @@ var Acco = function ( param ) {
 
 'use strict';
 
-var privates = {};
+var self = this;
 
-privates.param = param;
+var priv = {};
 
-privates.acco = document.getElementById( privates.param.acco );
+priv.param = param;
 
-privates.components = {
-    section : privates.param.section,
-    trigger : privates.param.trigger,
-    container : privates.param.container,
-    arrow : privates.param.arrow
-    }
+priv.acco = document.getElementById( priv.param.acco );
 
-privates.class = {
-    isVisibilityFalse : privates.param.isVisibilityFalse,
-    isVisibilityTrue : privates.param.isVisibilityTrue,
-    isActive : privates.param.isActive,
-    isNotActive : privates.param.isNotActive
-    }
+priv.comp = {
+    section : priv.param.section,
+    trigger : priv.param.trigger,
+    container : priv.param.container
+}
 
-privates.directionY = { 
-    dYs : 0,
-    dYf : 0
-    }
+priv.close = function () {
 
-privates.close = function () {
-    var sections = privates.acco.getElementsByClassName( privates.components.section ),
-        containers = privates.acco.getElementsByClassName( privates.components.container ),
-        arrows = privates.acco.getElementsByClassName( privates.components.arrow );
+var section = priv.acco.getElementsByClassName( priv.comp.section ),
+    container = priv.acco.getElementsByClassName( priv.comp.container );
 
-    for ( var indx = 0; indx <= sections.length - 1; indx++ ) {
-        if ( sections[indx].classList.contains( privates.param.section + '_is_active' ) ) {
-            sections[ indx ].classList.remove( privates.components.section + '_is_active' );
-            if ( containers[indx].classList.contains( privates.class.isVisibilityTrue ) ) {
-                containers[ indx ].classList.remove( privates.class.isVisibilityTrue );
-                containers[ indx ].classList.add( privates.class.isVisibilityFalse );
-                if ( arrows[ indx ].classList.contains( privates.class.isActive ) ) {
-                    arrows[ indx ].classList.remove( privates.class.isActive );
-                    arrows[ indx ].classList.add( privates.class.isNotActive );
-                }
+    for ( var indx = 0; indx <= section.length - 1; indx++ ) {
+        if ( section[indx].classList.contains( priv.comp.section + '_is_true' ) ) {
+            section[indx].classList.remove( priv.comp.section + '_is_true' );
+            section[indx].classList.add( priv.comp.section + '_is_false' );
+            if ( container[indx].classList.contains( priv.comp.container + '_is_true') ) {
+                container[indx].classList.remove( priv.comp.container + '_is_true');
+                container[indx].classList.add( priv.comp.container + '_is_false');
             }
         }
     }
-}
-
-privates.open = function ( e ) {
-    var target = e.target;
-   
-    var currentElement = target,
-        currentSection,
-        currentContainer,
-        currentArrow;
-
-    while ( !currentElement.classList.contains( privates.components.section ) ) {
-        currentElement = currentElement.parentNode;
-        currentSection = currentElement;
-        }
-    
-    if ( !currentSection.classList.contains( privates.components.section + '_is_active' ) ) {
-            privates.close();
-            currentContainer = currentSection.getElementsByClassName( privates.components.container )[ 0 ];
-            currentArrow = currentSection.getElementsByClassName( privates.components.arrow )[ 0 ];
-            if ( currentContainer.classList.contains( privates.class.isVisibilityFalse ) ) {
-                currentSection.classList.add( privates.components.section + '_is_active' );
-                currentContainer.classList.remove( privates.class.isVisibilityFalse );
-                currentArrow.classList.add( privates.class.isNotActive );
-                currentContainer.classList.add( privates.class.isVisibilityTrue );
-                currentArrow.classList.add( privates.class.isActive );
-            }
-        }
-        else { privates.close(); }    
-    }
-
-privates.acco.addEventListener( 'touchstart', function ( e ) {
-
-    privates.directionY.dYs = e.changedTouches[0].screenY;
-
-    });
-
-privates.acco.addEventListener( 'touchend', function ( e ) {
-
-    privates.directionY.dYf = e.changedTouches[0].screenY;
-
-    if ( privates.directionY.dYs > privates.directionY.dYf ) { privates.close(); }
-
-    });
-
-privates.acco.addEventListener( 'click', privates.open);
 
 }
+
+priv.handler = function ( e ) {
+e.preventDefault()
+
+var target = e.target,
+    currentSection,
+    currentContainer;
+
+if ( target.classList.contains( priv.comp.trigger ) ) {
+  currentSection = target;
+  while( !currentSection.classList.contains( priv.comp.section ) ) {
+    currentSection = currentSection.parentNode;
+    }  
+  
+  currentContainer = currentSection.getElementsByClassName( priv.comp.container )[0];  
+  
+  if ( currentSection.classList.contains( priv.comp.section + '_is_false') ) {
+    priv.close();
+    currentSection.classList.remove( priv.comp.section + '_is_false' );
+    currentSection.classList.add( priv.comp.section + '_is_true' );
+    if ( currentContainer.classList.contains( priv.comp.container + '_is_false' ) ) {
+      currentContainer.classList.remove( priv.param.container + '_is_false' );
+      currentContainer.classList.add( priv.param.container + '_is_true' );
+      } 
+    } else { priv.close(); }
+  }
+
+}
+
+priv.acco.addEventListener( 'click', priv.handler );
+
+} 
+
+var accoHorizontal = new Acco({
+
+    acco : 'acco-h',
+    section : 'js-acco-h__section',
+    trigger : 'js-acco-h__trigger',
+    container : 'js-acco-h__container'
+
+});
 
 var acco = new Acco({
 
     acco : 'acco',
     section : 'js-acco__section',
     trigger : 'js-acco__trigger',
-    container : 'js-acco__container',
-    arrow : 'js-acco__arrow',
-    isVisibilityFalse : 'js-acco__container_visibility_false',
-    isVisibilityTrue : 'js-acco__container_visibility_true',
-    isActive : 'js-acco__arrow_is_active',
-    isNotActive : 'js-acco__arrow_is_no-active'
-
-}); 
+    container : 'js-acco__container'
+    
+});
