@@ -62,10 +62,10 @@ gulp.task( 'svg', function () {
 
 });
 
-gulp.task( 'build:lib', function () {
+gulp.task( 'php:build', function () {
 
-    return gulp.src( 'src/static/lib/**/*' )
-               .pipe( gulp.dest( 'build/lib/' ) );
+    return gulp.src( '*.php' )
+               .pipe( gulp.dest( 'build/' ) )
 
 });
 
@@ -78,5 +78,5 @@ gulp.task( 'watch', function () {
 
 });
 
-gulp.task( 'default', gulp.series( gulp.parallel( 'pug', 'fonts', 'image', 'svg', 'stylus', 'scripts', 'build:lib' ),
+gulp.task( 'default', gulp.series( gulp.parallel( 'pug', 'fonts', 'image', 'svg', 'stylus', 'scripts', 'php:build' ),
                                    gulp.parallel( 'watch' ) ));

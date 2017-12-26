@@ -4,7 +4,7 @@ section.form.section
             .form__row.form__row_align_center
                 .wrap-cont
                     h2.form__heading.form__heading_align_center.section__heading Закажите доставку
-                    form.form__field#form
+                    form.form__field#form__field( action="server.php", method="post" )
                         .form__row
                             // col-main-1
                             .form__col.form__cont.form__cont_margin_right
@@ -64,7 +64,7 @@ section.form.section
                                     // col-4
                                     .form__col.form__col_container_floor
                                         .form__helper.form__helper_margin_bottom
-                                            label.form__name(for="name") Этаж
+                                            label.form__name(for="floor") Этаж
                                         .form__helper
                                             input.form__input.form__input_type_text#floor(type="text", name="floor")
                                     // col-4 end
@@ -91,18 +91,18 @@ section.form.section
                                     .form__row.form__row_margin_bottom
                                         // radio-button
                                         .form__helper.form__helper_wrap_input
-                                            input.form__input.form__input_type_radio#money(type="radio", name="radio")
+                                            input.form__input.form__input_type_radio#money(type="radio", name="radio", value="1")
                                             label.form__name(for="money") Потребуется сдача
                                         // radio-button end
                                         // checkbox-button
                                         .form__helper.form__helper_wrap_input
-                                            input.form__input.form__input_type_radio#card(type="radio", name="radio")
+                                            input.form__input.form__input_type_radio#card(type="radio", name="radio" value="2")
                                             label.form__name(for="card") Оплата по карте
                                         // checkbox-button end
                                     
                                     .form__row
                                         .form__helper.form__helper_wrap_input
-                                            input.form__input.form__input_type_checkbox#noCall(type="checkbox", name="noCall")
+                                            input.form__input.form__input_type_checkbox#noCall(type="checkbox", name="call")
                                             label.form__name(for="noCall") Не перезванивать
 
                                 // row-2 end
@@ -113,8 +113,8 @@ section.form.section
                             .form__col
                                 .form__row
                                     .form__btn.btn
-                                        a.form__order.btn__order.btn__order_effect_hover(href="#") Заказать
-                                        a.form__clear.btn__clear.btn__clear_effect_hover(href="#") Очистить
+                                        button.form__order.btn__order.btn__order_effect_hover( type="submit" ) Заказать
+                                        button.form__clear.btn__clear.btn__clear_effect_hover( type="reset" ) Очистить
 
 
 

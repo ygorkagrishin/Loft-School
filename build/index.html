@@ -704,7 +704,7 @@
             <div class="form__row form__row_align_center">
               <div class="wrap-cont">
                 <h2 class="form__heading form__heading_align_center section__heading">Закажите доставку</h2>
-                <form class="form__field" id="form">
+                <form class="form__field" id="form__field" action="server.php" method="post">
                   <div class="form__row">
                     <!-- col-main-1-->
                     <div class="form__col form__cont form__cont_margin_right">
@@ -781,7 +781,7 @@
                         <!-- col-4-->
                         <div class="form__col form__col_container_floor">
                           <div class="form__helper form__helper_margin_bottom">
-                            <label class="form__name" for="name">Этаж</label>
+                            <label class="form__name" for="floor">Этаж</label>
                           </div>
                           <div class="form__helper">
                             <input class="form__input form__input_type_text" id="floor" type="text" name="floor">
@@ -813,20 +813,20 @@
                         <div class="form__row form__row_margin_bottom">
                           <!-- radio-button-->
                           <div class="form__helper form__helper_wrap_input">
-                            <input class="form__input form__input_type_radio" id="money" type="radio" name="radio">
+                            <input class="form__input form__input_type_radio" id="money" type="radio" name="radio" value="1">
                             <label class="form__name" for="money">Потребуется сдача</label>
                           </div>
                           <!-- radio-button end-->
                           <!-- checkbox-button-->
                           <div class="form__helper form__helper_wrap_input">
-                            <input class="form__input form__input_type_radio" id="card" type="radio" name="radio">
+                            <input class="form__input form__input_type_radio" id="card" type="radio" name="radio" value="2">
                             <label class="form__name" for="card">Оплата по карте</label>
                           </div>
                           <!-- checkbox-button end-->
                         </div>
                         <div class="form__row">
                           <div class="form__helper form__helper_wrap_input">
-                            <input class="form__input form__input_type_checkbox" id="noCall" type="checkbox" name="noCall">
+                            <input class="form__input form__input_type_checkbox" id="noCall" type="checkbox" name="call">
                             <label class="form__name" for="noCall">Не перезванивать</label>
                           </div>
                         </div>
@@ -839,7 +839,10 @@
                     <div class="form__col form__cont form__cont_wrap_cont form__empty"></div>
                     <div class="form__col">
                       <div class="form__row">
-                        <div class="form__btn btn"><a class="form__order btn__order btn__order_effect_hover" href="#">Заказать</a><a class="form__clear btn__clear btn__clear_effect_hover" href="#">Очистить</a></div>
+                        <div class="form__btn btn">
+                          <button class="form__order btn__order btn__order_effect_hover" type="submit">Заказать</button>
+                          <button class="form__clear btn__clear btn__clear_effect_hover" type="reset">Очистить</button>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -850,41 +853,6 @@
         </div>
       </section>
       <!-- Form end-->
-      <section class="contact section" data-anchor="contact">
-        <div class="contact__inner">
-          <div class="contact__map" id="map"></div>
-          <div class="contact__row_pos_bottom">
-            <footer class="footer">
-              <div class="footer__bg footer__bg_after_bg lazy" data-src="image/contact/chalkboard_texture_mc2015_by_mattiamc-d8dbnac.png">
-                <div class="container">
-                  <div class="footer__row">
-                    <div class="footer__elem footer__contact">
-                      <div class="footer__address">Санкт-Петербург, ул.Бабушкина, д.12/1, 15</div>
-                      <div class="footer__phone"> 
-                        <div class="footer__pic-phone footer__pic">
-                          <object class="footer__pic-phone_type_svg" data="svg/phone.svg" type="image/svg+xml"></object>
-                        </div>+7 (812) 377-13-77    
-                      </div>
-                    </div>
-                    <div class="footer__elem footer__social">
-                      <ul class="footer__list footer__social-list">
-                        <li class="footer__item footer__social-item"><a class="footer__link footer__social-link footer__link_effect__hover" href="#">
-                            <object data="svg/vk.svg" type="image/svg+xml" width="24px" height="14px"></object></a></li>
-                        <li class="footer__item footer__social-item"><a class="footer__link footer__social-link footer__link_effect__hover" href="#">
-                            <object data="svg/fb.svg" type="image/svg+xml" width="22px" height="21px"></object></a></li>
-                        <li class="footer__item footer__social-item"><a class="footer__link footer__social-link footer__link_effect__hover" href="#">
-                            <object data="svg/inst.svg" type="image/svg+xml" width="21px" height="21px"></object></a></li>
-                        <li class="footer__item footer__social-item">   <a class="footer__link footer__social-link footer__link_effect__hover" href="#">
-                            <object data="svg/twitter.svg" type="image/svg+xml" width="19px" height="17px"></object></a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </footer>
-          </div>
-        </div>
-      </section>
     </div>
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
     <script src="../bower_components/jquery/dist/jquery.min.js"></script>
