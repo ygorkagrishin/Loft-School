@@ -18,21 +18,18 @@ privates.sel = {
   }
 
 privates.open = function ( e ) {
-  e.preventDefault();
-  if ( !privates.sel.menu.classList.contains( 'nav__list_visibil_true' ) ) {
-    privates.sel.menu.classList.add( 'nav__list_visibil_true' );
-    privates.sel.close.classList.add( 'i-close_visible_true' );
+  // e.preventDefault();
+  if ( !privates.sel.menu.classList.contains( 'js-nav__list_is_active' ) ) {
+    privates.sel.menu.classList.add( 'js-nav__list_is_active' );
+    privates.sel.close.classList.add( 'close_is_active' );
     }
   }
 
 privates.close = function ( e ) {
-  e.preventDefault();
-  if ( privates.sel.menu.classList.contains( 'nav__list_visibil_true' ) ) {
-    privates.sel.menu.classList.remove( 'nav__list_visibil_true' );
-    privates.sel.close.classList.remove( 'i-close_visible_true' )
-    if ( e.target.classList.contains( privates.sel.link ) ) {
-        console.log( 'true' )
-     }
+  // e.preventDefault();
+  if ( privates.sel.menu.classList.contains( 'js-nav__list_is_active' ) ) {
+    privates.sel.menu.classList.remove( 'js-nav__list_is_active' );
+    privates.sel.close.classList.remove( 'close_is_active' )
     }
   }
 
@@ -48,6 +45,6 @@ privates.sel.close.addEventListener( 'click', privates.close );
 var menu = new Menu({
     'menu': '.nav__list',
     'link': '.nav__link',
-    'open': '.i-menu',
-    'close': '.i-close' 
+    'open': '#menu',
+    'close': '.close' 
 });

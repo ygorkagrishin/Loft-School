@@ -16,19 +16,19 @@ section.hero.section
                             // nav
                             .header__col
                                 nav.nav
-                                    ul.nav__list
+                                    ul.nav__list#nav
                                         li.nav__item.nav__item_after_spot
-                                            a.nav__link(href="#", data).nav__link__effect_hover О нас
+                                            a.nav__link(href="#we").nav__link__effect_hover О нас
                                         li.nav__item.nav__item_after_spot
                                             a.nav__link(href="#").nav__link__effect_hover Бургеры
                                         li.nav__item.nav__item_after_spot
-                                            a.nav__link(href="#").nav__link__effect_hover Команда
+                                            a.nav__link(href="#team").nav__link__effect_hover Команда
                                         li.nav__item.nav__item_after_spot
-                                            a.nav__link(href="#").nav__link__effect_hover Меню
+                                            a.nav__link(href="#menu").nav__link__effect_hover Меню
                                         li.nav__item.nav__item_after_spot
-                                            a.nav__link(href="#").nav__link__effect_hover Отзывы
+                                            a.nav__link(href="#review").nav__link__effect_hover Отзывы
                                         li.nav__item
-                                            a.nav__link(href="#").nav__link__effect_hover Контакты
+                                            a.nav__link(href="#contact").nav__link__effect_hover Контакты
                             // nav end
 
                             // btn order
@@ -39,11 +39,11 @@ section.hero.section
                             
                             // icon menu
                             .header__col.header__col_pos_relative
-                                img(src="image/hero/close.png", alt="close").i-close.i-close_visible_false
-                                .i-menu
-                                    span.i-menu__comp
-                                    span.i-menu__comp
-                                    span.i-menu__comp
+                                img(src="image/hero/close.png", alt="close").close.close_is_no-active
+                                #menu( data-menu="#nav" )
+                                    span.menu__comp
+                                    span.menu__comp
+                                    span.menu__comp
                             // icon menu end
 
                 // header-end               
@@ -59,7 +59,7 @@ section.hero.section
                 // hero main end
 
                 // hero-arrrow-scroll
-                .hero__row
-                    .hero__arrow-scroll
+                .hero__row.hero__row_align_center
+                    a.hero__arrow-scroll( href="#we" )
                         object(data="svg/arrow-scroll.svg", type="image/svg+xml").hero__arrow
                 // hero-arrow-scroll-end
