@@ -1,50 +1,39 @@
-function Menu( param ) {
-
+var Menu = function ( param ) {
 'use strict';
 
 var self = this;
 
-var privates = {};
+var priv = {};
 
-privates.param = param;
+priv.param = param;
 
-privates.sel = {
+priv.menu = document.querySelector( priv.param.menu );
 
-  'menu': document.querySelector( privates.param.menu ),
-  'link': document.querySelectorAll( privates.param.link ), 
-  'open': document.querySelector( privates.param.open ),
-  'close': document.querySelector( privates.param.close )
+priv.close = priv.param.close !== undefined ? priv.param.close : 'js-close-menu';
 
-  }
+priv.handler = function () {
+    
+  var menu = document.querySelector( this.getAttribute( 'data-menu' ) ),
+      close = menu.getElementsByClassName( priv.close );
+  
+  if ( !menu.classList.contains( 'active' ) )  menu.classList.add( 'active' );
+  
+  for ( var indx = 0; indx <= close.length - 1; indx++ )
+  close[indx].addEventListener( 'click', function () { 
+    if ( menu.classList.contains( 'active' ) )  
+      menu.classList.remove( 'active' ); 
+  })
 
-privates.open = function ( e ) {
-  // e.preventDefault();
-  if ( !privates.sel.menu.classList.contains( 'js-nav__list_is_active' ) ) {
-    privates.sel.menu.classList.add( 'js-nav__list_is_active' );
-    privates.sel.close.classList.add( 'close_is_active' );
-    }
-  }
+}
 
-privates.close = function ( e ) {
-  // e.preventDefault();
-  if ( privates.sel.menu.classList.contains( 'js-nav__list_is_active' ) ) {
-    privates.sel.menu.classList.remove( 'js-nav__list_is_active' );
-    privates.sel.close.classList.remove( 'close_is_active' )
-    }
-  }
-
-for ( var indx = 0; indx <= privates.sel.link.length - 1; indx++ ) {
-    privates.sel.link[ indx ].addEventListener( 'click', privates.close );
-  }
-
-privates.sel.open.addEventListener( 'click', privates.open );
-privates.sel.close.addEventListener( 'click', privates.close );
+priv.menu.addEventListener( 'click', priv.handler );
 
 }
 
 var menu = new Menu({
-    'menu': '.nav__list',
-    'link': '.nav__link',
-    'open': '#menu',
-    'close': '.close' 
+menu : '#hamm'
 });
+
+/* Для тог, что бы закарыть меню нужно установить класс 'js-close-menu'. 
+Либо иной другой класс добавив свойство 
+close : className*/

@@ -32,14 +32,17 @@
                     <!-- nav-->
                     <div class="header__col">
                       <nav class="nav">
-                        <ul class="nav__list" id="nav">
-                          <li class="nav__item nav__item_after_spot"><a class="nav__link nav__link__effect_hover" href="#we">О нас</a></li>
-                          <li class="nav__item nav__item_after_spot"><a class="nav__link nav__link__effect_hover" href="#">Бургеры</a></li>
-                          <li class="nav__item nav__item_after_spot"><a class="nav__link nav__link__effect_hover" href="#team">Команда</a></li>
-                          <li class="nav__item nav__item_after_spot"><a class="nav__link nav__link__effect_hover" href="#menu">Меню</a></li>
-                          <li class="nav__item nav__item_after_spot"><a class="nav__link nav__link__effect_hover" href="#review">Отзывы</a></li>
-                          <li class="nav__item"><a class="nav__link nav__link__effect_hover" href="#contact">Контакты</a></li>
-                        </ul>
+                        <div class="js-nav__container" id="nav">
+                          <ul class="nav__list nav__list_pos_relative">
+                            <li class="nav__item nav__item_after_spot"><a class="nav__link nav__link__effect_hover js-close-menu" href="#we">О нас</a></li>
+                            <li class="nav__item nav__item_after_spot"><a class="nav__link nav__link__effect_hover js-close-menu" href="#">Бургеры</a></li>
+                            <li class="nav__item nav__item_after_spot"><a class="nav__link nav__link__effect_hover js-close-menu" href="#team">Команда</a></li>
+                            <li class="nav__item nav__item_after_spot"><a class="nav__link nav__link__effect_hover js-close-menu" href="#menu">Меню</a></li>
+                            <li class="nav__item nav__item_after_spot"><a class="nav__link nav__link__effect_hover js-close-menu" href="#review">Отзывы</a></li>
+                            <li class="nav__item"><a class="nav__link nav__link__effect_hover js-close-menu" href="#contact">Контакты</a></li>
+                            <li class="nav__item close js-close-menu"><img src="image/hero/close.png" alt="close"></li>
+                          </ul>
+                        </div>
                       </nav>
                     </div>
                     <!-- nav end-->
@@ -49,8 +52,8 @@
                     </div>
                     <!--btn order end-->
                     <!-- icon menu-->
-                    <div class="header__col header__col_pos_relative"><img class="close close_is_no-active" src="image/hero/close.png" alt="close">
-                      <div id="menu" data-menu="#nav"><span class="menu__comp"></span><span class="menu__comp"></span><span class="menu__comp"></span></div>
+                    <div class="header__col">
+                      <div id="hamm" data-menu="#nav"><span class="hamm__comp"></span><span class="hamm__comp"></span><span class="hamm__comp"></span></div>
                     </div>
                     <!-- icon menu end-->
                   </div>

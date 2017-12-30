@@ -16,19 +16,22 @@ section.hero.section
                             // nav
                             .header__col
                                 nav.nav
-                                    ul.nav__list#nav
-                                        li.nav__item.nav__item_after_spot
-                                            a.nav__link(href="#we").nav__link__effect_hover О нас
-                                        li.nav__item.nav__item_after_spot
-                                            a.nav__link(href="#").nav__link__effect_hover Бургеры
-                                        li.nav__item.nav__item_after_spot
-                                            a.nav__link(href="#team").nav__link__effect_hover Команда
-                                        li.nav__item.nav__item_after_spot
-                                            a.nav__link(href="#menu").nav__link__effect_hover Меню
-                                        li.nav__item.nav__item_after_spot
-                                            a.nav__link(href="#review").nav__link__effect_hover Отзывы
-                                        li.nav__item
-                                            a.nav__link(href="#contact").nav__link__effect_hover Контакты
+                                    .js-nav__container#nav
+                                        ul.nav__list.nav__list_pos_relative
+                                            li.nav__item.nav__item_after_spot
+                                                a.nav__link(href="#we").nav__link__effect_hover.js-close-menu О нас
+                                            li.nav__item.nav__item_after_spot
+                                                a.nav__link(href="#").nav__link__effect_hover.js-close-menu Бургеры
+                                            li.nav__item.nav__item_after_spot
+                                                a.nav__link(href="#team").nav__link__effect_hover.js-close-menu Команда
+                                            li.nav__item.nav__item_after_spot
+                                                a.nav__link(href="#menu").nav__link__effect_hover.js-close-menu Меню
+                                            li.nav__item.nav__item_after_spot
+                                                a.nav__link(href="#review").nav__link__effect_hover.js-close-menu Отзывы
+                                            li.nav__item
+                                                a.nav__link(href="#contact").nav__link__effect_hover.js-close-menu Контакты
+                                            li.nav__item.close.js-close-menu
+                                                img(src="image/hero/close.png", alt="close")
                             // nav end
 
                             // btn order
@@ -38,12 +41,11 @@ section.hero.section
                             //btn order end
                             
                             // icon menu
-                            .header__col.header__col_pos_relative
-                                img(src="image/hero/close.png", alt="close").close.close_is_no-active
-                                #menu( data-menu="#nav" )
-                                    span.menu__comp
-                                    span.menu__comp
-                                    span.menu__comp
+                            .header__col
+                                #hamm( data-menu="#nav" )
+                                    span.hamm__comp
+                                    span.hamm__comp
+                                    span.hamm__comp
                             // icon menu end
 
                 // header-end               

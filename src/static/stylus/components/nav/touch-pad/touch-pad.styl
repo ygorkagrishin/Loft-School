@@ -1,4 +1,4 @@
-.nav__list
+.js-nav__container
     @media screen and ( max-width 768px )
         position: fixed;
         display: none;
@@ -7,17 +7,21 @@
         z-index: 9999;
         width: 100%;
         height: 100%;
+
+.nav__list
+    @media screen and ( max-width 768px )
+        position: relative;
+        height: 100%;
         flex-direction: column;
         justify-content: center;
         background-color: primaryBlack;
 
-.js-nav__list_is_active
+.nav__list_pos_relative
     @media screen and ( max-width 768px )
-        display: flex;   
+        position: relative;
 
-.js-nav__list_is_no-active 
     @media screen and ( max-width 768px )
-        display: none;                
+        display: flex;                
 
 .nav__item_after_spot::after
     @media screen and ( max-width 768px )
@@ -26,4 +30,8 @@
 
 .nav__link
     @media screen and ( max-width 768px )
-        margin: 15px 0;          
+        margin: 15px 0;
+
+.js-nav__container.active
+    @media screen and ( max-width 768px )
+        display: block;          
