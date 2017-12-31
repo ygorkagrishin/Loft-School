@@ -1,3 +1,6 @@
+.review
+    position: relative;
+
 .review__row
     display: flex;
     flex-wrap: wrap;
@@ -46,10 +49,11 @@
     display: none;
 
 .review__popup
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     z-index: 999999;
+    display: none;
     width: 100%;
     height: 100%;
     background-color: rgba( primaryBlack,.9 );
@@ -81,8 +85,5 @@
     z-index: 999;
     cursor: pointer;
 
-.review__popup_visibility_false
-    display: none;
-
-.review__popup_visibility_true
+.review__popup.active
     display: block;    

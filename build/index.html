@@ -34,13 +34,13 @@
                       <nav class="nav">
                         <div class="js-nav__container" id="nav">
                           <ul class="nav__list nav__list_pos_relative">
-                            <li class="nav__item nav__item_after_spot"><a class="nav__link nav__link__effect_hover js-close-menu" href="#we">О нас</a></li>
-                            <li class="nav__item nav__item_after_spot"><a class="nav__link nav__link__effect_hover js-close-menu" href="#">Бургеры</a></li>
-                            <li class="nav__item nav__item_after_spot"><a class="nav__link nav__link__effect_hover js-close-menu" href="#team">Команда</a></li>
-                            <li class="nav__item nav__item_after_spot"><a class="nav__link nav__link__effect_hover js-close-menu" href="#menu">Меню</a></li>
-                            <li class="nav__item nav__item_after_spot"><a class="nav__link nav__link__effect_hover js-close-menu" href="#review">Отзывы</a></li>
-                            <li class="nav__item"><a class="nav__link nav__link__effect_hover js-close-menu" href="#contact">Контакты</a></li>
-                            <li class="nav__item close js-close-menu"><img src="image/hero/close.png" alt="close"></li>
+                            <li class="nav__item nav__item_after_spot"><a class="nav__link nav__link__effect_hover js-close-view" href="#we">О нас</a></li>
+                            <li class="nav__item nav__item_after_spot"><a class="nav__link nav__link__effect_hover js-close-view" href="#">Бургеры</a></li>
+                            <li class="nav__item nav__item_after_spot"><a class="nav__link nav__link__effect_hover js-close-view" href="#team">Команда</a></li>
+                            <li class="nav__item nav__item_after_spot"><a class="nav__link nav__link__effect_hover js-close-view" href="#menu">Меню</a></li>
+                            <li class="nav__item nav__item_after_spot"><a class="nav__link nav__link__effect_hover js-close-view" href="#review">Отзывы</a></li>
+                            <li class="nav__item"><a class="nav__link nav__link__effect_hover js-close-view" href="#contact">Контакты</a></li>
+                            <li class="nav__item nav__close js-close-view"><img src="image/hero/close.png" alt="close"></li>
                           </ul>
                         </div>
                       </nav>
@@ -53,7 +53,7 @@
                     <!--btn order end-->
                     <!-- icon menu-->
                     <div class="header__col">
-                      <div id="hamm" data-menu="#nav"><span class="hamm__comp"></span><span class="hamm__comp"></span><span class="hamm__comp"></span></div>
+                      <div id="hamm" data-view="#nav"><span class="hamm__comp"></span><span class="hamm__comp"></span><span class="hamm__comp"></span></div>
                     </div>
                     <!-- icon menu end-->
                   </div>
@@ -373,7 +373,7 @@
       </section>
       <!-- Menu end-->
       <!-- Review -->
-      <section class="review js-review section">
+      <section class="review section">
         <div class="review__row">
           <div class="review__col">
             <article class="review__review">
@@ -389,14 +389,14 @@
                         котлетка такой сочной, а сыр таким расплавленным.
                       </p>
                     </div>
-                    <div class="review__btn"><a class="btn__more btn__more_effect_hover js-popup__btn" data-popup="#review-1" href="#">Подробнее</a><a class="btn__read btn__read_effect_hover js-popup__btn" data-popup="#review-1" href="#">Читать отзыв</a></div>
+                    <div class="review__btn"><a class="btn__more btn__more_effect_hover js-review__view" data-view="#review-1" href="#">Подробнее</a><a class="btn__read btn__read_effect_hover js-review__view" data-view="#review-1" href="#">Читать отзыв</a></div>
                   </div>
                 </div>
               </div>
             </article>
           </div>
           <!-- Review popup 1-->
-          <div class="review__popup review__popup_visibility_false" id="review-1">
+          <div class="review__popup" id="review-1">
             <div class="review__popup-row">
               <div class="review__popup-cont">
                 <div class="review__popup-heading">Константин Спилберг</div>
@@ -410,7 +410,7 @@
                   что булочки могут быть такими мягкими, 
                   котлетка такой сочной, а сыр таким расплавленным.
                 </p>
-                <div class="review__popup-close"><img class="js-review__popup-close" src="image/review/close.png" alt="popup close"></div>
+                <div class="review__popup-close"><img class="js-close-view" src="image/review/close.png" alt="popup close"></div>
               </div>
             </div>
           </div>
@@ -429,14 +429,14 @@
                         котлетка такой сочной, а сыр таким расплавленным.    
                       </p>
                     </div>
-                    <div class="review__btn"><a class="btn__more btn__more_effect_hover js-popup__btn" data-popup="#review-2" href="#">Подробнее</a><a class="btn__read btn__read_effect_hover js-popup__btn" data-popup="#review-2" href="#">Читать отзыв</a></div>
+                    <div class="review__btn"><a class="btn__more btn__more_effect_hover js-review__view" data-view="#review-2" href="#">Подробнее</a><a class="btn__read btn__read_effect_hover js-review__view" data-view="#review-2" href="#">Читать отзыв</a></div>
                   </div>
                 </div>
               </div>
             </article>
           </div>
           <!-- Review popup 2-->
-          <div class="review__popup review__popup_visibility_false" id="review-2">
+          <div class="review__popup" id="review-2">
             <div class="review__popup-row">
               <div class="review__popup-cont">
                 <div class="review__popup-heading">Константин Спилберг</div>
@@ -450,7 +450,7 @@
                   что булочки могут быть такими мягкими, 
                   котлетка такой сочной, а сыр таким расплавленным.
                 </p>
-                <div class="review__popup-close"><img class="js-review__popup-close" src="image/review/close.png" alt="popup close"></div>
+                <div class="review__popup-close"><img class="js-close-view" src="image/review/close.png" alt="popup close"></div>
               </div>
             </div>
           </div>
@@ -469,14 +469,14 @@
                         котлетка такой сочной, а сыр таким расплавленным.
                       </p>
                     </div>
-                    <div class="review__btn"><a class="btn__more btn__more_effect_hover js-popup__btn" data-popup="#review-3" href="#">Подробнее</a><a class="btn__read btn__read_effect_hover js-popup__btn" data-popup="#review-3" href="#">Читать отзыв</a></div>
+                    <div class="review__btn"><a class="btn__more btn__more_effect_hover js-review__view" data-view="#review-3" href="#">Подробнее</a><a class="btn__read btn__read_effect_hover js-review__view" data-view="#review-3" href="#">Читать отзыв</a></div>
                   </div>
                 </div>
               </div>
             </article>
           </div>
           <!-- Review popup 3-->
-          <div class="review__popup review__popup_visibility_false" id="review-3">
+          <div class="review__popup" id="review-3">
             <div class="review__popup-row">
               <div class="review__popup-cont">
                 <div class="review__popup-heading">Константин Спилберг</div>
@@ -490,7 +490,7 @@
                   что булочки могут быть такими мягкими, 
                   котлетка такой сочной, а сыр таким расплавленным.
                 </p>
-                <div class="review__popup-close"><img class="js-review__popup-close" src="image/review/close.png" alt="popup close"></div>
+                <div class="review__popup-close"><img class="js-close-view" src="image/review/close.png" alt="popup close"></div>
               </div>
             </div>
           </div>
@@ -509,14 +509,14 @@
                         котлетка такой сочной, а сыр таким расплавленным.
                       </p>
                     </div>
-                    <div class="review__btn"><a class="btn__more btn__more_effect_hover js-popup__btn" data-popup="#review-4" href="#">Подробнее</a><a class="btn__read btn__read_effect_hover js-popup__btn" data-popup="#review-4" href="#">Читать отзыв</a></div>
+                    <div class="review__btn"><a class="btn__more btn__more_effect_hover js-review__view" data-view="#review-4" href="#">Подробнее</a><a class="btn__read btn__read_effect_hover js-review__view" data-view="#review-4" href="#">Читать отзыв</a></div>
                   </div>
                 </div>
               </div>
             </article>
           </div>
           <!-- Review popup 4-->
-          <div class="review__popup review__popup_visibility_false" id="review-4">
+          <div class="review__popup" id="review-4">
             <div class="review__popup-row">
               <div class="review__popup-cont">
                 <div class="review__popup-heading">Константин Спилберг</div>
@@ -530,7 +530,7 @@
                   что булочки могут быть такими мягкими, 
                   котлетка такой сочной, а сыр таким расплавленным.
                 </p>
-                <div class="review__popup-close"><img class="js-review__popup-close" src="image/review/close.png" alt="popup close"></div>
+                <div class="review__popup-close"><img class="js-close-view" src="image/review/close.png" alt="popup close"></div>
               </div>
             </div>
           </div>
@@ -549,14 +549,14 @@
                         котлетка такой сочной, а сыр таким расплавленным.
                       </p>
                     </div>
-                    <div class="review__btn"><a class="btn__more btn__more_effect_hover js-popup__btn" data-popup="#review-5" href="#">Подробнее</a><a class="btn__read btn__read_effect_hover js-popup__btn" data-popup="#review-5" href="#">Читать отзыв</a></div>
+                    <div class="review__btn"><a class="btn__more btn__more_effect_hover js-review__view" data-view="#review-5" href="#">Подробнее</a><a class="btn__read btn__read_effect_hover js-review__view" data-view="#review-5" href="#">Читать отзыв</a></div>
                   </div>
                 </div>
               </div>
             </article>
           </div>
           <!-- Review popup 5-->
-          <div class="review__popup review__popup_visibility_false" id="review-5">
+          <div class="review__popup" id="review-5">
             <div class="review__popup-row">
               <div class="review__popup-cont">
                 <div class="review__popup-heading">Константин Спилберг</div>
@@ -570,7 +570,7 @@
                   что булочки могут быть такими мягкими, 
                   котлетка такой сочной, а сыр таким расплавленным.
                 </p>
-                <div class="review__popup-close"><img class="js-review__popup-close" src="image/review/close.png" alt="popup close"></div>
+                <div class="review__popup-close"><img class="js-close-view" src="image/review/close.png" alt="popup close"></div>
               </div>
             </div>
           </div>
@@ -589,14 +589,14 @@
                         котлетка такой сочной, а сыр таким расплавленным.
                       </p>
                     </div>
-                    <div class="review__btn"><a class="btn__more btn__more_effect_hover js-popup__btn" data-popup="#review-6" href="#">Подробнее</a><a class="btn__read btn__read_effect_hover js-popup__btn" data-popup="#review-6" href="#">Читать отзыв</a></div>
+                    <div class="review__btn"><a class="btn__more btn__more_effect_hover js-review__view" data-view="#review-6" href="#">Подробнее</a><a class="btn__read btn__read_effect_hover js-review__view" data-view="#review-6" href="#">Читать отзыв</a></div>
                   </div>
                 </div>
               </div>
             </article>
           </div>
           <!-- Review popup 6-->
-          <div class="review__popup review__popup_visibility_false" id="review-6">
+          <div class="review__popup" id="review-6">
             <div class="review__popup-row">
               <div class="review__popup-cont">
                 <div class="review__popup-heading">Константин Спилберг</div>
@@ -610,7 +610,7 @@
                   что булочки могут быть такими мягкими, 
                   котлетка такой сочной, а сыр таким расплавленным.
                 </p>
-                <div class="review__popup-close"><img class="js-review__popup-close" src="image/review/close.png" alt="popup close"></div>
+                <div class="review__popup-close"><img class="js-close-view" src="image/review/close.png" alt="popup close"></div>
               </div>
             </div>
           </div>
@@ -629,14 +629,14 @@
                         котлетка такой сочной, а сыр таким расплавленным.
                       </p>
                     </div>
-                    <div class="review__btn"><a class="btn__more btn__more_effect_hover js-popup__btn" data-popup="#review-7" href="#">Подробнее</a><a class="btn__read btn__read_effect_hover js-popup__btn" data-popup="#review-7" href="#">Читать отзыв</a></div>
+                    <div class="review__btn"><a class="btn__more btn__more_effect_hover js-review__view" data-view="#review-7" href="#">Подробнее</a><a class="btn__read btn__read_effect_hover js-review__view" data-view="#review-7" href="#">Читать отзыв</a></div>
                   </div>
                 </div>
               </div>
             </article>
           </div>
           <!-- Review popup 7-->
-          <div class="review__popup review__popup_visibility_false" id="review-7">
+          <div class="review__popup" id="review-7">
             <div class="review__popup-row">
               <div class="review__popup-cont">
                 <div class="review__popup-heading">Константин Спилберг</div>
@@ -650,7 +650,7 @@
                   что булочки могут быть такими мягкими, 
                   котлетка такой сочной, а сыр таким расплавленным.
                 </p>
-                <div class="review__popup-close"><img class="js-review__popup-close" src="image/review/close.png" alt="popup close"></div>
+                <div class="review__popup-close"><img class="js-close-view" src="image/review/close.png" alt="popup close"></div>
               </div>
             </div>
           </div>
@@ -669,14 +669,14 @@
                         котлетка такой сочной, а сыр таким расплавленным.
                       </p>
                     </div>
-                    <div class="review__btn"><a class="btn__more btn__more_effect_hover js-popup__btn" data-popup="#review-8" href="#">Подробнее</a><a class="btn__read btn__read_effect_hover js-popup__btn" data-popup="#review-8" href="#">Читать отзыв</a></div>
+                    <div class="review__btn"><a class="btn__more btn__more_effect_hover js-review__view" data-view="#review-8" href="#">Подробнее</a><a class="btn__read btn__read_effect_hover js-review__view" data-view="#review-8" href="#">Читать отзыв</a></div>
                   </div>
                 </div>
               </div>
             </article>
           </div>
           <!-- Review popup 8-->
-          <div class="review__popup review__popup_visibility_false" id="review-8">
+          <div class="review__popup" id="review-8">
             <div class="review__popup-row">
               <div class="review__popup-cont">
                 <div class="review__popup-heading">Константин Спилберг</div>
@@ -690,7 +690,7 @@
                   что булочки могут быть такими мягкими, 
                   котлетка такой сочной, а сыр таким расплавленным.
                 </p>
-                <div class="review__popup-close"><img class="js-review__popup-close" src="image/review/close.png" alt="popup close"></div>
+                <div class="review__popup-close"><img class="js-close-view" src="image/review/close.png" alt="popup close"></div>
               </div>
             </div>
           </div>
