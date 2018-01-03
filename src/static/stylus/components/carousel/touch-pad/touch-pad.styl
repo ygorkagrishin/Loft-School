@@ -1,14 +1,19 @@
 .caro__slide
     @media screen and ( max-width 768px )
         flex-direction: column;
-        min-height: auto;
-        padding: 13% 0 0 0;
         text-align: center;
 
-.caro__col_grow_md
+.caro__slide > .caro__col_size_md:not( :last-child )
+    @media screen and ( max-width 768px )
+        margin: 0;
+
+.caro__col_size_md
     @media screen and ( max-width 768px )
         width: 78%;
-        margin: 0 0 3% 0;
+
+.caro__burger
+    @media screen and ( max-width 768px )
+        padding: 70px 0 26px 0;
 
 .caro__pic
     @media screen and ( max-width 768px )
@@ -16,40 +21,28 @@
 
 .caro__cont
     @media screen and ( max-width 768px )
-        align-self: center;     
+        align-self: center;
 
-.caro__heading
+.caro__title
     @media screen and ( max-width 768px )
-        padding-bottom: 3%;
+        padding-bottom: 16px;
 
 .caro__text
     @media screen and ( max-width 768px )
-        padding-bottom: 5%;
+        padding-bottom: 32px;
 
 .caro__footer
-    @media screen and ( max-width 768px )
+    @media screen and (  max-width 768px )
         justify-content: center;
 
-.caro__btn
+.caro__footer > .caro__col:not( :last-child )
     @media screen and ( max-width 768px )
-        margin-left: 27px;
+        margin-right: 30px;
 
-.caro__arrow_pos_left
+.caro__arrow-prev
     @media screen and ( max-width 768px )
         left: 2.5%;
 
-.caro__arrow_pos_right
+.caro__arrow-next
     @media screen and ( max-width 768px )
         right: 2.5%;
-
-.caro__comp
-    @media screen and ( max-width 768px )
-        top: 2.5%;
-        left: 17.5%;
-
-.caro__kkal_pos_abs
-    @media screen and ( max-width 768px )
-        left: auto;
-        bottom: auto;
-        right: 18%;
-        top: 3%;

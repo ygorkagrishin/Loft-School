@@ -37,17 +37,14 @@
     font: 14px / 24px ubuntulight;
     color: primaryWhite;
 
-.js-acco__container_is_false
+.acco__cont
+    display: flex; 
+
+.js-acco__section .js-acco__container
     display: none;
 
-.js-acco__container_is_true
+.js-acco__section.active .js-acco__container
     display: block;
 
-.acco__cont
-    display: flex;  
-
-.js-acco__arrow
-    transform: rotate( 0 );
-
-.js-acco__section_is_true .js-acco__arrow-rotate
+.js-acco__section.active .js-acco__arrow-rotate
     transform: rotate( -180deg );    

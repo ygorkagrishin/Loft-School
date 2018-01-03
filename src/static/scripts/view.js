@@ -7,11 +7,9 @@ var priv = {};
 
 priv.param = param;
 
-priv.target = document.querySelector( priv.param.target );
+priv.data = priv.param !== undefined ? priv.param.data : 'data-view';
 
-priv.data = priv.param.data !== undefined ? priv.param.close : 'data-view';
-
-priv.close = priv.param.close !== undefined ? priv.param.close : 'js-close-view';
+priv.close = priv.param !== undefined ? priv.param.close : 'js-close-view';
 
 priv.handler = function ( e ) {
 
@@ -26,7 +24,8 @@ priv.handler = function ( e ) {
       
     if ( !view.classList.contains( 'active' ) ) view.classList.add( 'active' );
 
-    close[0].addEventListener( 'click', function () { 
+    for ( var i = 0; i <= close.length - 1; i++ )
+    close[i].addEventListener( 'click', function () { 
       if ( view.classList.contains( 'active' ) ) view.classList.remove( 'active' ); 
     })
 
@@ -38,13 +37,7 @@ document.body.addEventListener( 'click', priv.handler );
 
 }
 
-var menu = new View({
-target : '#hamm'
-});
-
-var view = new View({
-target : '.js-review__view'
-});
+var view = new View();
 
 /* Для тог, что бы закарыть меню нужно установить класс 'js-close-menu'. 
 Либо иной другой класс добавив свойство 

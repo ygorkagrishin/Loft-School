@@ -2,30 +2,28 @@
     position: relative;
     width: 100%;
 
-.caro__container
-    overflow: hidden;
-
 .caro__row
     display: flex;
 
-.js-carousel__wrap_is_active
-    will-change: transform;
-    transition: all .7s;
+.caro__container
+    overflow: hidden;
 
-.caro__col_grow_lg
-    flex: 1 0 100%;
+.caro__wrap
+    will-change: transform;
 
 .caro__slide
-    position: relative;
-    align-items: center;
     min-height: 650px;
-    padding: 82px 0;
+    align-items: center;
+    padding: 84px 0;
 
-.caro__col_grow_md
-    width: 50%;
+.caro__col_size_lg
+    flex: 1 0 100%;
 
-.caro__burger
+.caro__slide > .caro__col_size_md:not( :last-child )
     margin-right: 20px;
+
+.caro__col_size_md
+    width: 50%;
 
 .caro__pic
     width: 100%;
@@ -33,88 +31,41 @@
 .caro__cont
     align-self: flex-start;
 
-.caro__heading
-    padding-bottom: 38px;
+.caro__title
+    padding-bottom: 37px;
     font: 72px / 64px gagalinregular;
     color: primaryWhite;
 
 .caro__text
-    padding-bottom: 20px;
+    padding-bottom: 22px;
+    font: 14px / 24px ubuntulight;
     color: primaryWhite;
 
 .caro__footer
     align-items: flex-end;
+
+.caro__footer > .caro__col:not( :last-child )
+    margin-right: 26px;
 
 .caro__price
     font: 30px / 28px gagalinregular;
     color: primaryOrange;
 
 .caro__price_size_lg
-    font-size: 72px;
-    line-height: 1;
+    font: 72px / 70px gagalinregular;
 
-.caro__btn
-    margin-left: 26px;
-
-.caro__arrow
+.caro__arrow_pos_abs
     position: absolute;
-    top: 48.5%;
+    top: 49%;
     z-index: 9999;
 
-.caro__arrow_way_prev
+.caro__arrow-prev
+    left: -4.5%;
     transform: rotate( 90deg );
 
-.caro__arrow_way_next
+.caro__arrow-next
+    right: -4.5%;
     transform: rotate( -90deg );
 
- .caro__arrow_pos_left
-    left: -4.5%;
-
-.caro__arrow_pos_right
-    right: -4.5%;   
-
-.caro__arrow-trigger
-    display: block;
-    cursor: pointer;
-
-.caro__comp_pos_abs
-    position: absolute;
-    top: 14%;
-    left: 0;
-
-.caro__comp-inner
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 90px;
-    height: 90px;
-    border-radius: 5px;
-    background: rgba( primaryOrange,.3 );
-
-.caro__comp-text
-    font: 14px / 1 gagalinregular;
-    color: primaryWhite;
-
-.caro__kkal_pos_abs
-    position: absolute;
-    left: 0;
-    bottom: 12%;
-
-.caro__kkal-inner
-    position: relative;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-.caro__kkal-text
-    font: 14px / 24px gagalinregular;
-    color: primaryWhite;
-
- .caro__kkal-sum
-     @extend .caro__kkal-text;
-     font-size: 20px;
-
-.caro__kkal-sum_pos_abs
-    position: absolute;
-    top: 32%;
-    left: 25%; 
+.caro__wrap.active
+    transition: all .7s;
