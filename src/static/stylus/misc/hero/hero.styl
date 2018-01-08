@@ -28,13 +28,14 @@
 .hero__row
     max-width: 100%;   
 
+.hero__col
+    width: 50%;
+
 .hero__main
     display: flex;
     align-items: center;
 
-.hero__burger 
-    position: relative;
-    width: 50%;    
+.hero__burger
     background: url(svg/drops.svg) no-repeat 16px 28px / 96%;;
 
 .hero__pic
@@ -44,7 +45,6 @@
     width: 88%;
 
 .hero__text
-    width: 50%;
     padding-left: 11px;
 
 .hero__heading_align_left
@@ -57,10 +57,16 @@
     letter-spacing: -1.7px;
     color: primaryWhite;    
 
+.hero__arrow
+    padding: 36px 0;
+    text-align: center;
+
 .hero__arrow-scroll
     display: inline-block;
-    padding: 36px 0;
     text-align: center;     
+    will-change: transform;
+    transition: all .7s;
+    cursor: pointer;
 
-.hero__row_align_center
-    text-align: center;
+.hero__arrow-scroll:hover
+    transform: translateY( -2px ) scale( 1.1 );

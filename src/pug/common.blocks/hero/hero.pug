@@ -1,10 +1,10 @@
-section.hero.section.hero_pos_relative 
+section.hero.section 
     .hero__bg
         .container
             .hero__rows
 
                 // header > nav
-                .hero__row
+                .hero__row.hero__header
                     header.header
                         .header__row
                             // logo
@@ -51,17 +51,16 @@ section.hero.section.hero_pos_relative
                 // header-end               
 
                 // hero main
-                .hero__row
-                    .hero__main
-                        .hero__burger
+                .hero__row.hero__main
+                    .hero__col.hero__burger
                             img(src="image/hero/steam.png", alt="burger-pic").hero__pic
-                        .hero__text
-                            h2.hero__heading_align_left.section__heading Мы делаем
+                    .hero__col.hero__text
+                            h2.hero__heading.hero__heading_align_left.section__heading Мы делаем
                             span.hero__subheading натуральные бургеры         
                 // hero main end
 
                 // hero-arrrow-scroll
-                .hero__row.hero__row_align_center
+                .hero__row.hero__arrow
                     a.hero__arrow-scroll( href="#we" )
-                        object(data="svg/arrow-scroll.svg", type="image/svg+xml").hero__arrow
+                        object(data="svg/arrow-scroll.svg", type="image/svg+xml").hero__arrow-pic
                 // hero-arrow-scroll-end
