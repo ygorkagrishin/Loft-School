@@ -8,7 +8,7 @@ section.burger.section
                         // Carousel wrap
                         .caro__row.caro__wrap.js-carousel__wrap
                             // Carousel slide 1
-                            .caro__col.caro__row.caro__col_size_lg.caro__slide.js-carousel__slide
+                            .caro__col.caro__row.caro__col_size_lg.caro__slide.caro__slide_pos_relative.js-carousel__slide
                                 .caro__col.caro__col_size_md.caro__burger
                                     img.caro__pic( src="image/burgers/dark-beef-burger.png" )
                                 .caro__col.caro__col_size_md.caro__cont
@@ -24,6 +24,55 @@ section.burger.section
                                             | рублей
                                         .caro__col.caro__order.btn
                                             a.caro__btn.btn__order( href="#" ) Заказать
+                                // Kkal 
+                                .caro__kkal.caro__kkal_pos_abs
+                                    .caro__kkal-inner
+                                        .caro__kkal-pic.caro__kkal_pos_relative
+                                            object(data="svg/kkal.svg", type="image/svg+xml")
+                                            span.caro__kkal-num.caro__kkal_pos_abs 1200
+                                        span.caro__kkal-text Ккал
+                                // Kkal end
+                                // Composition
+                                .caro__comp.caro__comp_pos_abs
+                                    .caro__comp-inner.caro__comp_pos_relative
+                                        .caro__comp-burger
+                                            object(data="svg/burger.svg", type="image/svg+xml")
+                                        span.caro__comp-comp Состав
+                                        .caro__comp-container#comp-1
+                                            ul.caro__comp-list
+                                                li.caro__row.caro__comp-item
+                                                    .caro__col.caro__comp-image
+                                                        object(data="svg/beef.svg", type="image/svg+xml")
+                                                    .caro__col.caro__comp-name Говядина
+                                                    .caro__col.caro__comp-num 300г
+                                                li.caro__row.caro__comp-item
+                                                    .caro__col.caro__comp-image
+                                                        object(data="svg/buns.svg", type="image/svg+xml")
+                                                    .caro__col.caro__comp-name Булочки
+                                                    .caro__col.caro__comp-num 100г
+                                                li.caro__row.caro__comp-item
+                                                    .caro__col.caro__comp-image
+                                                        object(data="svg/salad.svg", type="image/svg+xml")
+                                                    .caro__col.caro__comp-name Зелень
+                                                    .caro__col.caro__comp-num 70г
+                                                li.caro__row.caro__comp-item
+                                                    .caro__col.caro__comp-image
+                                                        object(data="svg/sauce.svg", type="image/svg+xml")
+                                                    .caro__col.caro__comp-name Соус
+                                                    .caro__col.caro__comp-num 150г
+                                                li.caro__row.caro__comp-item
+                                                    .caro__col.caro__comp-image
+                                                        object(data="svg/cucumber.svg", type="image/svg+xml")
+                                                    .caro__col.caro__comp-name Овощи
+                                                    .caro__col.caro__comp-num 200г
+                                                li.caro__row.caro__comp-item
+                                                    .caro__col.caro__comp-image
+                                                        object(data="svg/cheese.svg", type="image/svg+xml")
+                                                    .caro__col.caro__comp-name Сыр
+                                                    .caro__col.caro__comp-num 80г
+                                            .caro__comp-close
+                                                img(src="image/burgers/close.png", alt="close").js-close-view
+                                    .caro__comp-trigger.js-caro__comp-trigger( data-view="#comp-1" )
                             // Carousel slide 1 end
 
                             // Carousel slide 2
@@ -43,6 +92,55 @@ section.burger.section
                                             | рублей
                                         .caro__col.caro__order.btn
                                             a.caro__btn.btn__order( href="#" ) Заказать
+                                // Kkal 
+                                .caro__kkal.caro__kkal_pos_abs
+                                    .caro__kkal-inner
+                                        .caro__kkal-pic.caro__kkal_pos_relative
+                                            object(data="svg/kkal.svg", type="image/svg+xml")
+                                            span.caro__kkal-num.caro__kkal_pos_abs 1200
+                                        span.caro__kkal-text Ккал
+                                // Kkal end
+                                // Composition
+                                .caro__comp.caro__comp_pos_abs
+                                    .caro__comp-inner.caro__comp_pos_relative
+                                        .caro__comp-burger
+                                            object(data="svg/burger.svg", type="image/svg+xml")
+                                        span.caro__comp-comp Состав
+                                        .caro__comp-container#comp-2
+                                            ul.caro__comp-list
+                                                li.caro__row.caro__comp-item
+                                                    .caro__col.caro__comp-image
+                                                        object(data="svg/beef.svg", type="image/svg+xml")
+                                                    .caro__col.caro__comp-name Говядина
+                                                    .caro__col.caro__comp-num 300г
+                                                li.caro__row.caro__comp-item
+                                                    .caro__col.caro__comp-image
+                                                        object(data="svg/buns.svg", type="image/svg+xml")
+                                                    .caro__col.caro__comp-name Булочки
+                                                    .caro__col.caro__comp-num 100г
+                                                li.caro__row.caro__comp-item
+                                                    .caro__col.caro__comp-image
+                                                        object(data="svg/salad.svg", type="image/svg+xml")
+                                                    .caro__col.caro__comp-name Зелень
+                                                    .caro__col.caro__comp-num 70г
+                                                li.caro__row.caro__comp-item
+                                                    .caro__col.caro__comp-image
+                                                        object(data="svg/sauce.svg", type="image/svg+xml")
+                                                    .caro__col.caro__comp-name Соус
+                                                    .caro__col.caro__comp-num 150г
+                                                li.caro__row.caro__comp-item
+                                                    .caro__col.caro__comp-image
+                                                        object(data="svg/cucumber.svg", type="image/svg+xml")
+                                                    .caro__col.caro__comp-name Овощи
+                                                    .caro__col.caro__comp-num 200г
+                                                li.caro__row.caro__comp-item
+                                                    .caro__col.caro__comp-image
+                                                        object(data="svg/cheese.svg", type="image/svg+xml")
+                                                    .caro__col.caro__comp-name Сыр
+                                                    .caro__col.caro__comp-num 80г
+                                            .caro__comp-close
+                                                img(src="image/burgers/close.png", alt="close").js-close-view
+                                    .caro__comp-trigger.js-caro__comp-trigger( data-view="#comp-2" )
                             // Carousel slide 2 end
 
                             // Carousel slide 3
@@ -62,7 +160,192 @@ section.burger.section
                                             | рублей
                                         .caro__col.caro__order.btn
                                             a.caro__btn.btn__order( href="#" ) Заказать
+                                // Kkal 
+                                .caro__kkal.caro__kkal_pos_abs
+                                    .caro__kkal-inner
+                                        .caro__kkal-pic.caro__kkal_pos_relative
+                                            object(data="svg/kkal.svg", type="image/svg+xml")
+                                            span.caro__kkal-num.caro__kkal_pos_abs 1200
+                                        span.caro__kkal-text Ккал
+                                // Kkal end
+                                // Composition
+                                .caro__comp.caro__comp_pos_abs
+                                    .caro__comp-inner.caro__comp_pos_relative
+                                        .caro__comp-burger
+                                            object(data="svg/burger.svg", type="image/svg+xml")
+                                        span.caro__comp-comp Состав
+                                        .caro__comp-container#comp-3
+                                            ul.caro__comp-list
+                                                li.caro__row.caro__comp-item
+                                                    .caro__col.caro__comp-image
+                                                        object(data="svg/beef.svg", type="image/svg+xml")
+                                                    .caro__col.caro__comp-name Говядина
+                                                    .caro__col.caro__comp-num 300г
+                                                li.caro__row.caro__comp-item
+                                                    .caro__col.caro__comp-image
+                                                        object(data="svg/buns.svg", type="image/svg+xml")
+                                                    .caro__col.caro__comp-name Булочки
+                                                    .caro__col.caro__comp-num 100г
+                                                li.caro__row.caro__comp-item
+                                                    .caro__col.caro__comp-image
+                                                        object(data="svg/salad.svg", type="image/svg+xml")
+                                                    .caro__col.caro__comp-name Зелень
+                                                    .caro__col.caro__comp-num 70г
+                                                li.caro__row.caro__comp-item
+                                                    .caro__col.caro__comp-image
+                                                        object(data="svg/sauce.svg", type="image/svg+xml")
+                                                    .caro__col.caro__comp-name Соус
+                                                    .caro__col.caro__comp-num 150г
+                                                li.caro__row.caro__comp-item
+                                                    .caro__col.caro__comp-image
+                                                        object(data="svg/cucumber.svg", type="image/svg+xml")
+                                                    .caro__col.caro__comp-name Овощи
+                                                    .caro__col.caro__comp-num 200г
+                                                li.caro__row.caro__comp-item
+                                                    .caro__col.caro__comp-image
+                                                        object(data="svg/cheese.svg", type="image/svg+xml")
+                                                    .caro__col.caro__comp-name Сыр
+                                                    .caro__col.caro__comp-num 80г
+                                            .caro__comp-close
+                                                img(src="image/burgers/close.png", alt="close").js-close-view
+                                    .caro__comp-trigger.js-caro__comp-trigger( data-view="#comp-3" )
                             // Carousel slide 3 end
+
+                            // Carousel slide 4
+                            .caro__col.caro__row.caro__col_size_lg.caro__slide.js-carousel__slide
+                                .caro__col.caro__col_size_md.caro__burger
+                                    img.caro__pic( src="image/burgers/NYC-Diner-Bacon-Cheeseburger.png" )
+                                .caro__col.caro__col_size_md.caro__cont
+                                    h2.caro__title Dark beef burger
+                                    p.caro__text
+                                        | Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, 
+                                        | тремя кусочками нежнейшего сыра эмменталь, двумя помидорами, луком, 
+                                        | салатом и соусом гриль теперь 
+                                        | с добавлением экзотического соуса чураско.
+                                    .caro__row.caro__footer
+                                        .caro__col.caro__price
+                                            span.caro__price.caro__price_size_lg 500
+                                            | рублей
+                                        .caro__col.caro__order.btn
+                                            a.caro__btn.btn__order( href="#" ) Заказать
+                                // Kkal 
+                                .caro__kkal.caro__kkal_pos_abs
+                                    .caro__kkal-inner
+                                        .caro__kkal-pic.caro__kkal_pos_relative
+                                            object(data="svg/kkal.svg", type="image/svg+xml")
+                                            span.caro__kkal-num.caro__kkal_pos_abs 1200
+                                        span.caro__kkal-text Ккал
+                                // Kkal end
+                                // Composition
+                                .caro__comp.caro__comp_pos_abs
+                                    .caro__comp-inner.caro__comp_pos_relative
+                                        .caro__comp-burger
+                                            object(data="svg/burger.svg", type="image/svg+xml")
+                                        span.caro__comp-comp Состав
+                                        .caro__comp-container#comp-4
+                                            ul.caro__comp-list
+                                                li.caro__row.caro__comp-item
+                                                    .caro__col.caro__comp-image
+                                                        object(data="svg/beef.svg", type="image/svg+xml")
+                                                    .caro__col.caro__comp-name Говядина
+                                                    .caro__col.caro__comp-num 300г
+                                                li.caro__row.caro__comp-item
+                                                    .caro__col.caro__comp-image
+                                                        object(data="svg/buns.svg", type="image/svg+xml")
+                                                    .caro__col.caro__comp-name Булочки
+                                                    .caro__col.caro__comp-num 100г
+                                                li.caro__row.caro__comp-item
+                                                    .caro__col.caro__comp-image
+                                                        object(data="svg/salad.svg", type="image/svg+xml")
+                                                    .caro__col.caro__comp-name Зелень
+                                                    .caro__col.caro__comp-num 70г
+                                                li.caro__row.caro__comp-item
+                                                    .caro__col.caro__comp-image
+                                                        object(data="svg/sauce.svg", type="image/svg+xml")
+                                                    .caro__col.caro__comp-name Соус
+                                                    .caro__col.caro__comp-num 150г
+                                                li.caro__row.caro__comp-item
+                                                    .caro__col.caro__comp-image
+                                                        object(data="svg/cucumber.svg", type="image/svg+xml")
+                                                    .caro__col.caro__comp-name Овощи
+                                                    .caro__col.caro__comp-num 200г
+                                                li.caro__row.caro__comp-item
+                                                    .caro__col.caro__comp-image
+                                                        object(data="svg/cheese.svg", type="image/svg+xml")
+                                                    .caro__col.caro__comp-name Сыр
+                                                    .caro__col.caro__comp-num 80г
+                                            .caro__comp-close
+                                                img(src="image/burgers/close.png", alt="close").js-close-view
+                                    .caro__comp-trigger.js-caro__comp-trigger( data-view="#comp-4" )
+                            // Carousel slide 4 end
+
+                            // Carousel slide 5
+                            .caro__col.caro__row.caro__col_size_lg.caro__slide.js-carousel__slide
+                                .caro__col.caro__col_size_md.caro__burger
+                                    img.caro__pic( src="image/burgers/Spicy_Shrimp_Burger.png" )
+                                .caro__col.caro__col_size_md.caro__cont
+                                    h2.caro__title Dark beef burger
+                                    p.caro__text
+                                        | Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, 
+                                        | тремя кусочками нежнейшего сыра эмменталь, двумя помидорами, луком, 
+                                        | салатом и соусом гриль теперь 
+                                        | с добавлением экзотического соуса чураско.
+                                    .caro__row.caro__footer
+                                        .caro__col.caro__price
+                                            span.caro__price.caro__price_size_lg 500
+                                            | рублей
+                                        .caro__col.caro__order.btn
+                                            a.caro__btn.btn__order( href="#" ) Заказать
+                                // Kkal 
+                                .caro__kkal.caro__kkal_pos_abs
+                                    .caro__kkal-inner
+                                        .caro__kkal-pic.caro__kkal_pos_relative
+                                            object(data="svg/kkal.svg", type="image/svg+xml")
+                                            span.caro__kkal-num.caro__kkal_pos_abs 1200
+                                        span.caro__kkal-text Ккал
+                                // Kkal end
+                                // Composition
+                                .caro__comp.caro__comp_pos_abs
+                                    .caro__comp-inner.caro__comp_pos_relative
+                                        .caro__comp-burger
+                                            object(data="svg/burger.svg", type="image/svg+xml")
+                                        span.caro__comp-comp Состав
+                                        .caro__comp-container#comp-5
+                                            ul.caro__comp-list
+                                                li.caro__row.caro__comp-item
+                                                    .caro__col.caro__comp-image
+                                                        object(data="svg/beef.svg", type="image/svg+xml")
+                                                    .caro__col.caro__comp-name Говядина
+                                                    .caro__col.caro__comp-num 300г
+                                                li.caro__row.caro__comp-item
+                                                    .caro__col.caro__comp-image
+                                                        object(data="svg/buns.svg", type="image/svg+xml")
+                                                    .caro__col.caro__comp-name Булочки
+                                                    .caro__col.caro__comp-num 100г
+                                                li.caro__row.caro__comp-item
+                                                    .caro__col.caro__comp-image
+                                                        object(data="svg/salad.svg", type="image/svg+xml")
+                                                    .caro__col.caro__comp-name Зелень
+                                                    .caro__col.caro__comp-num 70г
+                                                li.caro__row.caro__comp-item
+                                                    .caro__col.caro__comp-image
+                                                        object(data="svg/sauce.svg", type="image/svg+xml")
+                                                    .caro__col.caro__comp-name Соус
+                                                    .caro__col.caro__comp-num 150г
+                                                li.caro__row.caro__comp-item
+                                                    .caro__col.caro__comp-image
+                                                        object(data="svg/cucumber.svg", type="image/svg+xml")
+                                                    .caro__col.caro__comp-name Овощи
+                                                    .caro__col.caro__comp-num 200г
+                                                li.caro__row.caro__comp-item
+                                                    .caro__col.caro__comp-image
+                                                        object(data="svg/cheese.svg", type="image/svg+xml")
+                                                    .caro__col.caro__comp-name Сыр
+                                                    .caro__col.caro__comp-num 80г
+                                            .caro__comp-close
+                                                img(src="image/burgers/close.png", alt="close").js-close-view
+                                    .caro__comp-trigger.js-caro__comp-trigger( data-view="#comp-5" )
+                            // Carousel slide 5 end
 
                         // Carousel wrap end
                     .caro__arrow.caro__arrow-prev.caro__arrow_pos_abs.js-carousel__prev

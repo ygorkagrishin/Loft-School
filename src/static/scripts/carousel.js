@@ -7,8 +7,10 @@ var priv = {};
 
 priv.param = param;
 
+// carousel
 priv.carousel = document.querySelector( priv.param.carousel );
 
+// class name
 priv.cls = {
     wrap : priv.param.wrap,
     slide : priv.param.slide,
@@ -16,6 +18,7 @@ priv.cls = {
     next : priv.param.next
 }
 
+// carousel components
 priv.comp = {
     wrap : priv.carousel.getElementsByClassName( priv.cls.wrap ),
     slide : priv.carousel.getElementsByClassName( priv.cls.slide ),
@@ -23,11 +26,14 @@ priv.comp = {
     next : priv.carousel.getElementsByClassName( priv.cls.next )
 } 
 
+// daefault
 priv.default = {
-    autoPlay : priv.param.autoPlay !== undefined ? priv.param.autoPlay : false,
-    duration : priv.param.duration !== undefined ? priv.param.duration : 700
+    autoplay : priv.param.autoplay !== undefined ? priv.param.autoplay : false,
+    duration : priv.param.duration !== undefined ? priv.param.duration : 700,
+    rest : priv.param.rest !== undefined ? priv.param.rest : 20000
 }
 
+// direction
 priv.direction = {
   start : 0,
   end : 0
@@ -55,8 +61,14 @@ self.prev = function ( e ) {
   }, 20);
 }
 
+priv.comp.prev[0].addEventListener( 'click', function () {
+  if ( priv.default.autoplay ) priv.default.autoplay = false;
+  self.prev();
+  self.restart();
+});
+
 // add event next
-self.next = function ( e ) {
+self.next = function ( e ) {   
   if ( priv.comp.slide.length - 1 > priv.currentSection )
   setTimeout( function () {
     ++priv.currentSection;
@@ -72,30 +84,48 @@ self.next = function ( e ) {
   }, 20);
 }
 
+priv.comp.next[0].addEventListener( 'click', function () {
+  if ( priv.default.autoplay ) priv.default.autoplay = false;
+  self.next();
+  self.restart();
+});
+
+// add carousel event
+priv.carousel.addEventListener( 'click', function ( e ) {
+  if ( priv.default.autoplay ) priv.default.autoplay = false;
+  self.restart();
+});
+
 // add touchstart event
-priv.carousel.addEventListener( 'touchstart', function ( e ) {
-  priv.direction.start = e.changedTouches[0].screenX;
-});
+// priv.carousel.addEventListener( 'touchstart', function ( e ) {
+//   priv.direction.start = e.changedTouches[0].screenX;
+// });
 // add touchend event
-priv.carousel.addEventListener( 'touchend', function ( e ) {
-  priv.direction.end = e.changedTouches[0].screenX;
-  priv.direction.start > priv.direction.end ? self.next() : self.prev();
-});
+// priv.carousel.addEventListener( 'touchend', function ( e ) {
+//   if ( priv.default.autoplay ) priv.default.autoplay = false;
+//   priv.direction.end = e.changedTouches[0].screenX;
+//   priv.direction.start  + 30 > priv.direction.end ? self.next() : self.prev();
+//   console.log( 'start : ' + priv.direction.start );
+//   console.log( 'end : ' + priv.direction.end );
+// });
 
-// add timer
-// if ( priv.default.autoPlay !== false )
-// priv.timer = function () { 
-//   setTimeout( function () {
-//     setInterval( function () {
-//       self.next();
-//     }, priv.default.duration);
-//   }, priv.default.duration);
-// }
+// add timer event
+self.timer = function () {
+  setTimeout( function () {
+    setInterval( function () {
+      if ( priv.default.autoplay ) self.next();
+    }, priv.default.duration);
+  }, priv.default.duration);
+}
 
-priv.comp.prev[0].addEventListener( 'click', self.prev );
-priv.comp.next[0].addEventListener( 'click', self.next );
+// add restart
+self.restart = function () {
+  setTimeout( function () {
+    priv.default.autoplay = true;
+  }, priv.default.rest );
+}
 
-window.addEventListener( 'load', priv.timer );
+window.addEventListener( 'load', self.timer) ;
 
 }
 
@@ -105,6 +135,6 @@ var carousel = new Carousel({
     slide : 'js-carousel__slide',
     prev : 'js-carousel__prev',
     next : 'js-carousel__next',
-    autoPlay : true,
-    duration : 1500
+    autoplay : true,
+    duration : 3500
 });

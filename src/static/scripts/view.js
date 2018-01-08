@@ -15,8 +15,8 @@ priv.handler = function ( e ) {
 
   var target = e.target, view, close
 
-  if ( target.hasAttribute( priv.data ) ) { 
-    
+  if ( target.hasAttribute( priv.data ) ) {
+
     if ( target.tagName.toLowerCase() === 'a' ) e.preventDefault()
     
     view = document.querySelector( target.getAttribute( priv.data ) );

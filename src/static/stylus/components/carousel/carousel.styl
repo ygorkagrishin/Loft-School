@@ -12,14 +12,18 @@
     will-change: transform;
 
 .caro__slide
+    position: relative;
     min-height: 650px;
     align-items: center;
     padding: 84px 0;
 
+.caro__slide_pos_relative
+    position: relative;
+
 .caro__col_size_lg
     flex: 1 0 100%;
 
-.caro__slide > .caro__col_size_md:not( :last-child )
+.caro__burger
     margin-right: 20px;
 
 .caro__col_size_md
@@ -53,6 +57,104 @@
 
 .caro__price_size_lg
     font: 72px / 70px gagalinregular;
+
+/* ***************** */
+
+// Kkal
+
+/* ***************** */
+
+.caro__kkal.caro__kkal_pos_abs
+    position: absolute;
+    bottom: 87px;
+    left: 0;
+    text-align: center;
+
+.caro__kkal-pic.caro__kkal_pos_relative
+    position: relative;
+
+.caro__kkal-num.caro__kkal_pos_abs
+    position: absolute;
+    top: 41%;
+    left: 24%;
+
+.caro__kkal-num
+    font: 20px / 24px gagalinregular;
+    color: primaryWhite;
+
+.caro__kkal-text
+    font: 14px / 16px gagalinregular;
+    color: primaryWhite;
+
+/* ***************** */
+
+// Composition
+
+/* ***************** */
+.caro__comp
+    width: 90px;
+    height: 90px;
+    padding: 8px 0;
+    border-radius: 5px;
+    text-align: center;
+    background-color: rgba( primaryOrange,.3 );
+
+.caro__comp_pos_abs
+    position: absolute;
+    top: 14%;
+    left: 0;
+    z-index: 9999;
+
+.caro__comp-inner
+    position: relative;
+
+.caro__comp-comp
+    font: 14px / 28px gagalinregular;
+    color: primaryWhite;
+
+.caro__comp-container
+    position: absolute;
+    top: -10%;
+    left: 100%;
+    z-index: 9999;
+    display: none;
+    justify-content: space-between;
+    width: 270px;
+    padding: 18px 22px;
+    background: primaryWhite;
+    border-radius: 5px;
+
+.caro__comp-list
+    width: 100%;
+
+.caro__comp-image
+    width: 44px;
+
+.caro__comp-item
+    display: flex;
+    align-items: center;
+
+.caro__comp-item:not(:last-child)
+    margin-bottom: 16px;
+
+.caro__comp-name
+    flex: 2;
+    padding: 0 28px;
+    font: 14px / 24px ubuntumedium;
+    color: primaryBlack;
+    text-align: left;
+
+.caro__comp-num
+    font: 14px / 24px ubuntulight;
+    color: primaryBlack;
+
+.caro__comp-close
+    display: none;
+
+.caro__comp:hover 
+    background: primaryOrange;
+    .caro__comp-container
+        display: flex;
 
 .caro__arrow_pos_abs
     position: absolute;

@@ -35,7 +35,7 @@
                         <div class="js-nav__container" id="nav">
                           <ul class="nav__list nav__list_pos_relative">
                             <li class="nav__item nav__item_after_spot"><a class="nav__link nav__link__effect_hover js-close-view" href="#we">О нас</a></li>
-                            <li class="nav__item nav__item_after_spot"><a class="nav__link nav__link__effect_hover js-close-view" href="#">Бургеры</a></li>
+                            <li class="nav__item nav__item_after_spot"><a class="nav__link nav__link__effect_hover js-close-view" href="#burger">Бургеры</a></li>
                             <li class="nav__item nav__item_after_spot"><a class="nav__link nav__link__effect_hover js-close-view" href="#team">Команда</a></li>
                             <li class="nav__item nav__item_after_spot"><a class="nav__link nav__link__effect_hover js-close-view" href="#menu">Меню</a></li>
                             <li class="nav__item nav__item_after_spot"><a class="nav__link nav__link__effect_hover js-close-view" href="#review">Отзывы</a></li>
@@ -153,7 +153,7 @@
                   <!-- Carousel wrap-->
                   <div class="caro__row caro__wrap js-carousel__wrap">
                     <!-- Carousel slide 1-->
-                    <div class="caro__col caro__row caro__col_size_lg caro__slide js-carousel__slide">
+                    <div class="caro__col caro__row caro__col_size_lg caro__slide caro__slide_pos_relative js-carousel__slide">
                       <div class="caro__col caro__col_size_md caro__burger"><img class="caro__pic" src="image/burgers/dark-beef-burger.png"></div>
                       <div class="caro__col caro__col_size_md caro__cont">
                         <h2 class="caro__title">Dark beef burger</h2>
@@ -167,6 +167,71 @@
                           <div class="caro__col caro__price"><span class="caro__price caro__price_size_lg">500</span>рублей</div>
                           <div class="caro__col caro__order btn"><a class="caro__btn btn__order" href="#">Заказать</a></div>
                         </div>
+                      </div>
+                      <!-- Kkal -->
+                      <div class="caro__kkal caro__kkal_pos_abs">
+                        <div class="caro__kkal-inner">
+                          <div class="caro__kkal-pic caro__kkal_pos_relative">
+                            <object data="svg/kkal.svg" type="image/svg+xml"></object><span class="caro__kkal-num caro__kkal_pos_abs">1200</span>
+                          </div><span class="caro__kkal-text">Ккал</span>
+                        </div>
+                      </div>
+                      <!-- Kkal end-->
+                      <!-- Composition-->
+                      <div class="caro__comp caro__comp_pos_abs">
+                        <div class="caro__comp-inner caro__comp_pos_relative">
+                          <div class="caro__comp-burger">
+                            <object data="svg/burger.svg" type="image/svg+xml"></object>
+                          </div><span class="caro__comp-comp">Состав</span>
+                          <div class="caro__comp-container" id="comp-1">
+                            <ul class="caro__comp-list">
+                              <li class="caro__row caro__comp-item">
+                                <div class="caro__col caro__comp-image">
+                                  <object data="svg/beef.svg" type="image/svg+xml"></object>
+                                </div>
+                                <div class="caro__col caro__comp-name">Говядина</div>
+                                <div class="caro__col caro__comp-num">300г</div>
+                              </li>
+                              <li class="caro__row caro__comp-item">
+                                <div class="caro__col caro__comp-image">
+                                  <object data="svg/buns.svg" type="image/svg+xml"></object>
+                                </div>
+                                <div class="caro__col caro__comp-name">Булочки</div>
+                                <div class="caro__col caro__comp-num">100г</div>
+                              </li>
+                              <li class="caro__row caro__comp-item">
+                                <div class="caro__col caro__comp-image">
+                                  <object data="svg/salad.svg" type="image/svg+xml"></object>
+                                </div>
+                                <div class="caro__col caro__comp-name">Зелень</div>
+                                <div class="caro__col caro__comp-num">70г</div>
+                              </li>
+                              <li class="caro__row caro__comp-item">
+                                <div class="caro__col caro__comp-image">
+                                  <object data="svg/sauce.svg" type="image/svg+xml"></object>
+                                </div>
+                                <div class="caro__col caro__comp-name">Соус</div>
+                                <div class="caro__col caro__comp-num">150г</div>
+                              </li>
+                              <li class="caro__row caro__comp-item">
+                                <div class="caro__col caro__comp-image">
+                                  <object data="svg/cucumber.svg" type="image/svg+xml"></object>
+                                </div>
+                                <div class="caro__col caro__comp-name">Овощи</div>
+                                <div class="caro__col caro__comp-num">200г</div>
+                              </li>
+                              <li class="caro__row caro__comp-item">
+                                <div class="caro__col caro__comp-image">
+                                  <object data="svg/cheese.svg" type="image/svg+xml"></object>
+                                </div>
+                                <div class="caro__col caro__comp-name">Сыр</div>
+                                <div class="caro__col caro__comp-num">80г</div>
+                              </li>
+                            </ul>
+                            <div class="caro__comp-close"><img class="js-close-view" src="image/burgers/close.png" alt="close"></div>
+                          </div>
+                        </div>
+                        <div class="caro__comp-trigger js-caro__comp-trigger" data-view="#comp-1"></div>
                       </div>
                     </div>
                     <!-- Carousel slide 1 end-->
@@ -186,6 +251,71 @@
                           <div class="caro__col caro__order btn"><a class="caro__btn btn__order" href="#">Заказать</a></div>
                         </div>
                       </div>
+                      <!-- Kkal -->
+                      <div class="caro__kkal caro__kkal_pos_abs">
+                        <div class="caro__kkal-inner">
+                          <div class="caro__kkal-pic caro__kkal_pos_relative">
+                            <object data="svg/kkal.svg" type="image/svg+xml"></object><span class="caro__kkal-num caro__kkal_pos_abs">1200</span>
+                          </div><span class="caro__kkal-text">Ккал</span>
+                        </div>
+                      </div>
+                      <!-- Kkal end-->
+                      <!-- Composition-->
+                      <div class="caro__comp caro__comp_pos_abs">
+                        <div class="caro__comp-inner caro__comp_pos_relative">
+                          <div class="caro__comp-burger">
+                            <object data="svg/burger.svg" type="image/svg+xml"></object>
+                          </div><span class="caro__comp-comp">Состав</span>
+                          <div class="caro__comp-container" id="comp-2">
+                            <ul class="caro__comp-list">
+                              <li class="caro__row caro__comp-item">
+                                <div class="caro__col caro__comp-image">
+                                  <object data="svg/beef.svg" type="image/svg+xml"></object>
+                                </div>
+                                <div class="caro__col caro__comp-name">Говядина</div>
+                                <div class="caro__col caro__comp-num">300г</div>
+                              </li>
+                              <li class="caro__row caro__comp-item">
+                                <div class="caro__col caro__comp-image">
+                                  <object data="svg/buns.svg" type="image/svg+xml"></object>
+                                </div>
+                                <div class="caro__col caro__comp-name">Булочки</div>
+                                <div class="caro__col caro__comp-num">100г</div>
+                              </li>
+                              <li class="caro__row caro__comp-item">
+                                <div class="caro__col caro__comp-image">
+                                  <object data="svg/salad.svg" type="image/svg+xml"></object>
+                                </div>
+                                <div class="caro__col caro__comp-name">Зелень</div>
+                                <div class="caro__col caro__comp-num">70г</div>
+                              </li>
+                              <li class="caro__row caro__comp-item">
+                                <div class="caro__col caro__comp-image">
+                                  <object data="svg/sauce.svg" type="image/svg+xml"></object>
+                                </div>
+                                <div class="caro__col caro__comp-name">Соус</div>
+                                <div class="caro__col caro__comp-num">150г</div>
+                              </li>
+                              <li class="caro__row caro__comp-item">
+                                <div class="caro__col caro__comp-image">
+                                  <object data="svg/cucumber.svg" type="image/svg+xml"></object>
+                                </div>
+                                <div class="caro__col caro__comp-name">Овощи</div>
+                                <div class="caro__col caro__comp-num">200г</div>
+                              </li>
+                              <li class="caro__row caro__comp-item">
+                                <div class="caro__col caro__comp-image">
+                                  <object data="svg/cheese.svg" type="image/svg+xml"></object>
+                                </div>
+                                <div class="caro__col caro__comp-name">Сыр</div>
+                                <div class="caro__col caro__comp-num">80г</div>
+                              </li>
+                            </ul>
+                            <div class="caro__comp-close"><img class="js-close-view" src="image/burgers/close.png" alt="close"></div>
+                          </div>
+                        </div>
+                        <div class="caro__comp-trigger js-caro__comp-trigger" data-view="#comp-2"></div>
+                      </div>
                     </div>
                     <!-- Carousel slide 2 end-->
                     <!-- Carousel slide 3-->
@@ -204,8 +334,239 @@
                           <div class="caro__col caro__order btn"><a class="caro__btn btn__order" href="#">Заказать</a></div>
                         </div>
                       </div>
+                      <!-- Kkal -->
+                      <div class="caro__kkal caro__kkal_pos_abs">
+                        <div class="caro__kkal-inner">
+                          <div class="caro__kkal-pic caro__kkal_pos_relative">
+                            <object data="svg/kkal.svg" type="image/svg+xml"></object><span class="caro__kkal-num caro__kkal_pos_abs">1200</span>
+                          </div><span class="caro__kkal-text">Ккал</span>
+                        </div>
+                      </div>
+                      <!-- Kkal end-->
+                      <!-- Composition-->
+                      <div class="caro__comp caro__comp_pos_abs">
+                        <div class="caro__comp-inner caro__comp_pos_relative">
+                          <div class="caro__comp-burger">
+                            <object data="svg/burger.svg" type="image/svg+xml"></object>
+                          </div><span class="caro__comp-comp">Состав</span>
+                          <div class="caro__comp-container" id="comp-3">
+                            <ul class="caro__comp-list">
+                              <li class="caro__row caro__comp-item">
+                                <div class="caro__col caro__comp-image">
+                                  <object data="svg/beef.svg" type="image/svg+xml"></object>
+                                </div>
+                                <div class="caro__col caro__comp-name">Говядина</div>
+                                <div class="caro__col caro__comp-num">300г</div>
+                              </li>
+                              <li class="caro__row caro__comp-item">
+                                <div class="caro__col caro__comp-image">
+                                  <object data="svg/buns.svg" type="image/svg+xml"></object>
+                                </div>
+                                <div class="caro__col caro__comp-name">Булочки</div>
+                                <div class="caro__col caro__comp-num">100г</div>
+                              </li>
+                              <li class="caro__row caro__comp-item">
+                                <div class="caro__col caro__comp-image">
+                                  <object data="svg/salad.svg" type="image/svg+xml"></object>
+                                </div>
+                                <div class="caro__col caro__comp-name">Зелень</div>
+                                <div class="caro__col caro__comp-num">70г</div>
+                              </li>
+                              <li class="caro__row caro__comp-item">
+                                <div class="caro__col caro__comp-image">
+                                  <object data="svg/sauce.svg" type="image/svg+xml"></object>
+                                </div>
+                                <div class="caro__col caro__comp-name">Соус</div>
+                                <div class="caro__col caro__comp-num">150г</div>
+                              </li>
+                              <li class="caro__row caro__comp-item">
+                                <div class="caro__col caro__comp-image">
+                                  <object data="svg/cucumber.svg" type="image/svg+xml"></object>
+                                </div>
+                                <div class="caro__col caro__comp-name">Овощи</div>
+                                <div class="caro__col caro__comp-num">200г</div>
+                              </li>
+                              <li class="caro__row caro__comp-item">
+                                <div class="caro__col caro__comp-image">
+                                  <object data="svg/cheese.svg" type="image/svg+xml"></object>
+                                </div>
+                                <div class="caro__col caro__comp-name">Сыр</div>
+                                <div class="caro__col caro__comp-num">80г</div>
+                              </li>
+                            </ul>
+                            <div class="caro__comp-close"><img class="js-close-view" src="image/burgers/close.png" alt="close"></div>
+                          </div>
+                        </div>
+                        <div class="caro__comp-trigger js-caro__comp-trigger" data-view="#comp-3"></div>
+                      </div>
                     </div>
                     <!-- Carousel slide 3 end-->
+                    <!-- Carousel slide 4-->
+                    <div class="caro__col caro__row caro__col_size_lg caro__slide js-carousel__slide">
+                      <div class="caro__col caro__col_size_md caro__burger"><img class="caro__pic" src="image/burgers/NYC-Diner-Bacon-Cheeseburger.png"></div>
+                      <div class="caro__col caro__col_size_md caro__cont">
+                        <h2 class="caro__title">Dark beef burger</h2>
+                        <p class="caro__text">
+                          Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, 
+                          тремя кусочками нежнейшего сыра эмменталь, двумя помидорами, луком, 
+                          салатом и соусом гриль теперь 
+                          с добавлением экзотического соуса чураско.
+                        </p>
+                        <div class="caro__row caro__footer">
+                          <div class="caro__col caro__price"><span class="caro__price caro__price_size_lg">500</span>рублей</div>
+                          <div class="caro__col caro__order btn"><a class="caro__btn btn__order" href="#">Заказать</a></div>
+                        </div>
+                      </div>
+                      <!-- Kkal -->
+                      <div class="caro__kkal caro__kkal_pos_abs">
+                        <div class="caro__kkal-inner">
+                          <div class="caro__kkal-pic caro__kkal_pos_relative">
+                            <object data="svg/kkal.svg" type="image/svg+xml"></object><span class="caro__kkal-num caro__kkal_pos_abs">1200</span>
+                          </div><span class="caro__kkal-text">Ккал</span>
+                        </div>
+                      </div>
+                      <!-- Kkal end-->
+                      <!-- Composition-->
+                      <div class="caro__comp caro__comp_pos_abs">
+                        <div class="caro__comp-inner caro__comp_pos_relative">
+                          <div class="caro__comp-burger">
+                            <object data="svg/burger.svg" type="image/svg+xml"></object>
+                          </div><span class="caro__comp-comp">Состав</span>
+                          <div class="caro__comp-container" id="comp-4">
+                            <ul class="caro__comp-list">
+                              <li class="caro__row caro__comp-item">
+                                <div class="caro__col caro__comp-image">
+                                  <object data="svg/beef.svg" type="image/svg+xml"></object>
+                                </div>
+                                <div class="caro__col caro__comp-name">Говядина</div>
+                                <div class="caro__col caro__comp-num">300г</div>
+                              </li>
+                              <li class="caro__row caro__comp-item">
+                                <div class="caro__col caro__comp-image">
+                                  <object data="svg/buns.svg" type="image/svg+xml"></object>
+                                </div>
+                                <div class="caro__col caro__comp-name">Булочки</div>
+                                <div class="caro__col caro__comp-num">100г</div>
+                              </li>
+                              <li class="caro__row caro__comp-item">
+                                <div class="caro__col caro__comp-image">
+                                  <object data="svg/salad.svg" type="image/svg+xml"></object>
+                                </div>
+                                <div class="caro__col caro__comp-name">Зелень</div>
+                                <div class="caro__col caro__comp-num">70г</div>
+                              </li>
+                              <li class="caro__row caro__comp-item">
+                                <div class="caro__col caro__comp-image">
+                                  <object data="svg/sauce.svg" type="image/svg+xml"></object>
+                                </div>
+                                <div class="caro__col caro__comp-name">Соус</div>
+                                <div class="caro__col caro__comp-num">150г</div>
+                              </li>
+                              <li class="caro__row caro__comp-item">
+                                <div class="caro__col caro__comp-image">
+                                  <object data="svg/cucumber.svg" type="image/svg+xml"></object>
+                                </div>
+                                <div class="caro__col caro__comp-name">Овощи</div>
+                                <div class="caro__col caro__comp-num">200г</div>
+                              </li>
+                              <li class="caro__row caro__comp-item">
+                                <div class="caro__col caro__comp-image">
+                                  <object data="svg/cheese.svg" type="image/svg+xml"></object>
+                                </div>
+                                <div class="caro__col caro__comp-name">Сыр</div>
+                                <div class="caro__col caro__comp-num">80г</div>
+                              </li>
+                            </ul>
+                            <div class="caro__comp-close"><img class="js-close-view" src="image/burgers/close.png" alt="close"></div>
+                          </div>
+                        </div>
+                        <div class="caro__comp-trigger js-caro__comp-trigger" data-view="#comp-4"></div>
+                      </div>
+                    </div>
+                    <!-- Carousel slide 4 end-->
+                    <!-- Carousel slide 5-->
+                    <div class="caro__col caro__row caro__col_size_lg caro__slide js-carousel__slide">
+                      <div class="caro__col caro__col_size_md caro__burger"><img class="caro__pic" src="image/burgers/Spicy_Shrimp_Burger.png"></div>
+                      <div class="caro__col caro__col_size_md caro__cont">
+                        <h2 class="caro__title">Dark beef burger</h2>
+                        <p class="caro__text">
+                          Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, 
+                          тремя кусочками нежнейшего сыра эмменталь, двумя помидорами, луком, 
+                          салатом и соусом гриль теперь 
+                          с добавлением экзотического соуса чураско.
+                        </p>
+                        <div class="caro__row caro__footer">
+                          <div class="caro__col caro__price"><span class="caro__price caro__price_size_lg">500</span>рублей</div>
+                          <div class="caro__col caro__order btn"><a class="caro__btn btn__order" href="#">Заказать</a></div>
+                        </div>
+                      </div>
+                      <!-- Kkal -->
+                      <div class="caro__kkal caro__kkal_pos_abs">
+                        <div class="caro__kkal-inner">
+                          <div class="caro__kkal-pic caro__kkal_pos_relative">
+                            <object data="svg/kkal.svg" type="image/svg+xml"></object><span class="caro__kkal-num caro__kkal_pos_abs">1200</span>
+                          </div><span class="caro__kkal-text">Ккал</span>
+                        </div>
+                      </div>
+                      <!-- Kkal end-->
+                      <!-- Composition-->
+                      <div class="caro__comp caro__comp_pos_abs">
+                        <div class="caro__comp-inner caro__comp_pos_relative">
+                          <div class="caro__comp-burger">
+                            <object data="svg/burger.svg" type="image/svg+xml"></object>
+                          </div><span class="caro__comp-comp">Состав</span>
+                          <div class="caro__comp-container" id="comp-5">
+                            <ul class="caro__comp-list">
+                              <li class="caro__row caro__comp-item">
+                                <div class="caro__col caro__comp-image">
+                                  <object data="svg/beef.svg" type="image/svg+xml"></object>
+                                </div>
+                                <div class="caro__col caro__comp-name">Говядина</div>
+                                <div class="caro__col caro__comp-num">300г</div>
+                              </li>
+                              <li class="caro__row caro__comp-item">
+                                <div class="caro__col caro__comp-image">
+                                  <object data="svg/buns.svg" type="image/svg+xml"></object>
+                                </div>
+                                <div class="caro__col caro__comp-name">Булочки</div>
+                                <div class="caro__col caro__comp-num">100г</div>
+                              </li>
+                              <li class="caro__row caro__comp-item">
+                                <div class="caro__col caro__comp-image">
+                                  <object data="svg/salad.svg" type="image/svg+xml"></object>
+                                </div>
+                                <div class="caro__col caro__comp-name">Зелень</div>
+                                <div class="caro__col caro__comp-num">70г</div>
+                              </li>
+                              <li class="caro__row caro__comp-item">
+                                <div class="caro__col caro__comp-image">
+                                  <object data="svg/sauce.svg" type="image/svg+xml"></object>
+                                </div>
+                                <div class="caro__col caro__comp-name">Соус</div>
+                                <div class="caro__col caro__comp-num">150г</div>
+                              </li>
+                              <li class="caro__row caro__comp-item">
+                                <div class="caro__col caro__comp-image">
+                                  <object data="svg/cucumber.svg" type="image/svg+xml"></object>
+                                </div>
+                                <div class="caro__col caro__comp-name">Овощи</div>
+                                <div class="caro__col caro__comp-num">200г</div>
+                              </li>
+                              <li class="caro__row caro__comp-item">
+                                <div class="caro__col caro__comp-image">
+                                  <object data="svg/cheese.svg" type="image/svg+xml"></object>
+                                </div>
+                                <div class="caro__col caro__comp-name">Сыр</div>
+                                <div class="caro__col caro__comp-num">80г</div>
+                              </li>
+                            </ul>
+                            <div class="caro__comp-close"><img class="js-close-view" src="image/burgers/close.png" alt="close"></div>
+                          </div>
+                        </div>
+                        <div class="caro__comp-trigger js-caro__comp-trigger" data-view="#comp-5"></div>
+                      </div>
+                    </div>
+                    <!-- Carousel slide 5 end-->
                   </div>
                   <!-- Carousel wrap end-->
                 </div>
@@ -970,6 +1331,7 @@
         </div>
       </section>
     </div>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
     <script src="../bower_components/jquery/dist/jquery.min.js"></script>
     <script src="../bower_components/fullpage.js/dist/jquery.fullpage.min.js"></script>
     <script src="main.min.js"></script>
